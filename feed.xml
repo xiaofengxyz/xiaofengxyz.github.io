@@ -17,19 +17,105 @@
 
     <title>编程人生</title>
     <description>记录编程生活的点点滴滴，努力提升自己。</description>
-    <link>https://xiaofengxyz.github.io/</link>
-    <atom:link href="https://xiaofengxyz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jul 2019 10:32:24 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Jul 2019 10:32:24 +0800</lastBuildDate>
+    <link>https://flyingeye.cn/</link>
+    <atom:link href="https://flyingeye.cn/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 22 Jul 2019 01:19:08 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Jul 2019 01:19:08 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
-        <title>第一篇日志</title>
-        <description>&lt;p&gt;2019-07-04-第一篇日志&lt;/p&gt;
-</description>
-        <pubDate>Thu, 04 Jul 2019 00:00:00 +0800</pubDate>
-        <link>https://xiaofengxyz.github.io/blog/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%97%A5%E5%BF%97/</link>
-        <guid isPermaLink="true">https://xiaofengxyz.github.io/blog/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%97%A5%E5%BF%97/</guid>
+        <title>ARTS挑战第一周</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#arts挑战第一周&quot; id=&quot;markdown-toc-arts挑战第一周&quot;&gt;ARTS挑战第一周&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;h2 id=&quot;arts挑战第一周&quot;&gt;ARTS挑战第一周&lt;/h2&gt; &lt;p&gt;Algorithm: &lt;a href=&quot;http://flyingeye.cn/blog/LeetCode算法题解-Two-Sum&quot; target=&quot;_blank&quot;&gt;LeetCode算法题解-Two-Sum&lt;/a&gt; Review: &lt;a href=&quot;http://flyingeye.cn/blog/技术文章翻译-游戏开发和unity初学者的8条建议&quot; target=&quot;_blank&quot;&gt;技术文章翻译-游戏开发和unity初学者的8条建议&lt;/a&gt; Tip: &lt;a href=&quot;http://flyingeye.cn/blog/工作小结-正则表达式小工具&quot; target=&quot;_blank&quot;&gt;工作小结-正则表达式小工具&lt;/a&gt; Share: &lt;a href=&quot;http://flyingeye.cn/blog/思考-持续集成&quot; target=&quot;_blank&quot;&gt;思考-持续集成&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to...</description>
+        <pubDate>Sun, 21 Jul 2019 17:02:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E4%B8%80%E5%91%A8/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E4%B8%80%E5%91%A8/</guid>
+        
+        <tag>ARTS</tag>
+        
+        <tag>ARTS挑战</tag>
+        
+        <tag>挑战</tag>
+        
+      </item>
+    
+      <item>
+        <title>思考：持续集成</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#为什么要持续集成&quot; id=&quot;markdown-toc-为什么要持续集成&quot;&gt;为什么要持续集成&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#什么是持续集成&quot; id=&quot;markdown-toc-什么是持续集成&quot;&gt;什么是持续集成&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#持续集成的好处&quot; id=&quot;markdown-toc-持续集成的好处&quot;&gt;持续集成的好处&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;h2 id=&quot;为什么要持续集成&quot;&gt;为什么要持续集成&lt;/h2&gt; &lt;p&gt;在开始这个话题之前，我们来回忆一下在日常的开发发布的时候经常会出现的情况： 在产品上线前夕，也是很多公司最繁忙的时候。已经凌晨了，办公室内仍然热火朝天。测试同学不断的喊着某个开发同学的名字，这里是怎么了？怎么不好用了，之前不是好好的？jira上的Bug列表如泉涌般出现了各种各样的问题。研发同学焦头烂额，不断的去查看一个又一个bug。好的情况是终于搞定了所有问题，抬起木木的脑袋（都感觉不到是自己的了）看向窗外，东方已经泛起了鱼肚白，又是一个不眠之夜。不断的解决这些问题，攻城拔寨，终于能保证如期上线了，想想还有点成就感呢。但凡是也有例外，坏的情况是最终也没有解决完问题，尤其是有那么一些疑难杂症，项目上线只好延期。&lt;/p&gt; &lt;p&gt;面对领导的诘问，只能说：开发完在开发环境（或app模拟器）测试时完全正常的啊。。。。&lt;/p&gt; &lt;p&gt;这是经常会出现的场景，我们按部就班的在测试环境中开发产品，测试在测试环境中测试，到最后到了最后阶段，要上线了，环境变了，各种问题都出现了。要么是设备和模拟器的差异造成的，要么是某个参数设置有问题等等。&lt;/p&gt; &lt;p&gt;总而言之，这样传统的工作方式有以下问题：&lt;/p&gt; &lt;ol&gt; &lt;li&gt;最后在生产环境中会出现各种各样的bug&lt;/li&gt; &lt;li&gt;软件交付、产品上线时间无法保证&lt;/li&gt; &lt;li&gt;项目后期，比如性能问题等越难以解决。&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;而持续集成就是为了防止这种事情的发生。&lt;/p&gt; &lt;h2 id=&quot;什么是持续集成&quot;&gt;什么是持续集成&lt;/h2&gt; &lt;p&gt;在软件工程中，持续集成（CI）是指将所有开发者的工作副本每天多次合并到主干的做法。Grady Booch 在1991年的 Booch method 中首次命名并提出了 CI 的概念，尽管在当时他并不主张每天多次集成。而 XP（Extreme programming，极限编程）采用了 CI 的概念，并提倡每天不止一次集成。&lt;/p&gt; &lt;h2 id=&quot;持续集成的好处&quot;&gt;持续集成的好处&lt;/h2&gt; &lt;ol&gt; &lt;li&gt;集成的任意环节都是自动完成，无需人工太多干预&lt;/li&gt; &lt;li&gt;能尽快发现软件的集成问题（因为频繁集成，每一次集成就有可能发现集成问题）&lt;/li&gt; &lt;li&gt;能很快适应需求变更（经常变更需求真的很烦）&lt;/li&gt; &lt;li&gt;减少管理风险&lt;/li&gt; &lt;/ol&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title...</description>
+        <pubDate>Sun, 21 Jul 2019 16:16:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E6%80%9D%E8%80%83-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E6%80%9D%E8%80%83-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid>
+        
+        <tag>思考</tag>
+        
+        <tag>持续集成</tag>
+        
+        <tag>持续</tag>
+        
+        <tag>集成</tag>
+        
+      </item>
+    
+      <item>
+        <title>工作小结-正则表达式小工具.</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;在编程工作中难免会遇到使用正则表达式的情况，但它又比较晦涩，不像普通的代码能清晰明了。 有时自己写了一段正则表达式，都不知道能不能匹配成功。 因为我工作中经常使用到JetBrains公司的系列产品，诸如webStorm、PHPStorm、Rider等。发现在搜索的时候(ctrl+f或commond+f)在搜索栏右侧有个Regex选项，勾选之后，可以输入正则表达式，很方便的即时检验你所写的代码的正确性。&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these musics. &lt;/p&gt; &lt;div class=&quot;jektify__tracklist jektify__tracklist--dark jektify__tracklist--custom&quot;&gt; &lt;iframe id=&quot;jektify__track&quot; class=&quot;jektify__track...</description>
+        <pubDate>Sun, 21 Jul 2019 16:10:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%BB%93-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E5%B7%A5%E5%85%B7/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%BB%93-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E5%B7%A5%E5%85%B7/</guid>
+        
+        <tag>工作小结</tag>
+        
+        <tag>正则表达式</tag>
+        
+        <tag>小工具</tag>
+        
+      </item>
+    
+      <item>
+        <title>游戏开发和unity初学者的8条建议</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#1不要重复造轮子使用内置的引擎工具&quot; id=&quot;markdown-toc-1不要重复造轮子使用内置的引擎工具&quot;&gt;1、不要重复造轮子，使用内置的引擎工具。&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#2谷歌是你的朋友文档也是&quot; id=&quot;markdown-toc-2谷歌是你的朋友文档也是&quot;&gt;2、谷歌是你的朋友，文档也是&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#3跟其他人分享你的经验&quot; id=&quot;markdown-toc-3跟其他人分享你的经验&quot;&gt;3、跟其他人分享你的经验&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#4做game-jams-游戏开发者在很短的一段时间内规划设计和创建一个或多个游戏&quot; id=&quot;markdown-toc-4做game-jams-游戏开发者在很短的一段时间内规划设计和创建一个或多个游戏&quot;&gt;4、做Game Jams (游戏开发者在很短的一段时间内规划、设计、和创建一个或多个游戏)&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#5不断的重新评估你的工作&quot; id=&quot;markdown-toc-5不断的重新评估你的工作&quot;&gt;5、不断的重新评估你的工作&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#6系统条理和严谨&quot; id=&quot;markdown-toc-6系统条理和严谨&quot;&gt;6、系统条理和严谨&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#7使用版本管理工具&quot; id=&quot;markdown-toc-7使用版本管理工具&quot;&gt;7、使用版本管理工具&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#8插件可以节省你的时间&quot; id=&quot;markdown-toc-8插件可以节省你的时间&quot;&gt;8、插件可以节省你的时间&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;文章来源：&lt;a href=&quot;https://medium.com/ironequal/8-gamedev-unity-essential-beginner-tips-a80d80a8ae78&quot; target=&quot;_blank&quot;&gt;8 Gamedev &amp;amp; Unity Essential Beginner Tips!&lt;/a&gt;&lt;/p&gt; &lt;p&gt;想要了解怎样快速学习游戏编程？ 去做游戏。 这里是几点建议帮助你： Hi,我是Keryann,一个在IronEqual工作的年轻人，现在正在开发REPULSE: Galactic Rivals。 这个项目开始于一年多以前。对于一款小范围的游戏来说，这个时间似乎是真的很长了，但是当我开始开发这款游戏的时候，我几乎没有游戏开发的知识。所以在整个项目中，我学习了游戏编程以及Unity的工作流。 我想把我学到并且现在每天都在使用的东西写下来和你们分享：&lt;/p&gt; &lt;h2 id=&quot;1不要重复造轮子使用内置的引擎工具&quot;&gt;1、不要重复造轮子，使用内置的引擎工具。&lt;/h2&gt; &lt;p&gt;在使用任何一款游戏引擎的时候，比如Unity或者是虚幻引擎，一些开发者（主要是来自计算机科学领域的）倾向于埋头开始开发大型算法或数据结构，而不去了解它们是不是在引擎中已经存在。 我想到了一些例子，比如一些开发人员阐释去重写Unity的动画器，甚至是基础的寻路系统。&lt;/p&gt; &lt;p&gt;当然，既是了解游戏引擎，也可以编写自己的工具使它们更适合你的项目，这样能节省你很多时间、也能弥补引擎的缺陷。 但是请记住，对于一个学习游戏开发的人来说，了解引擎所能提供的所有可能的工具是很重要的。知道了这些知识，就可以选择哪些工具可以去学习，哪些工具需要从头开始创造。&lt;/p&gt; &lt;h2 id=&quot;2谷歌是你的朋友文档也是&quot;&gt;2、谷歌是你的朋友，文档也是&lt;/h2&gt; &lt;p&gt;一旦你开始了你的游戏创作，在很多事情上，你会遇到很多问题，缺乏经验去解决。当你遇到这样的事情时，你的第一反应应该是查看文档（查看Unity的和虚幻引擎的）。 游戏引擎文档可能会很厚，但真的非常有用。它可以回答你大部分关于游戏组件的大部分问题，让你访问API文档，帮助你确定一个特定的语法，而最重要的是，它可以帮助你描述你遇到的问题。&lt;/p&gt; &lt;p&gt;这些都是为了召唤我们最好的朋友：谷歌！ 无论你问什么样的问题，你都会发现有人已经问过了并且给出了答案。这真的是一个能够找到你遇到的任何问题 的解决方案的利器。&lt;/p&gt; &lt;p&gt;能否帮助你的主要网站，特别是Unity：answers.unity3d.com, stackoverflow.com 还有gamedev.stackexchange.com.&lt;/p&gt; &lt;h2 id=&quot;3跟其他人分享你的经验&quot;&gt;3、跟其他人分享你的经验&lt;/h2&gt; &lt;p&gt;帮助和灵感，当然还有其他的一些创意的另一个更重要的来源是来自你周围或者是在网上。（原文：Another great source of help and inspiration is of course other creatives, from your surroundings or on the internet. ）事实上，游戏开发像其他的活动一样可以有很多形式和项目，所有你总是会学到一些东西。 所以，为了最大化你的学习进程，你需要从别人的经验和失败中汲取营养。&lt;/p&gt; &lt;p&gt;分享你的工作。至少你会有一次愉快的交流，最好的情况是你会学到改进及当前的或未来的工作的方法。&lt;/p&gt; &lt;h2 id=&quot;4做game-jams-游戏开发者在很短的一段时间内规划设计和创建一个或多个游戏&quot;&gt;4、做Game Jams (游戏开发者在很短的一段时间内规划、设计、和创建一个或多个游戏)&lt;/h2&gt; &lt;p&gt;游戏jam不仅仅是一个了解游戏开发的一种方法，而且是一种能刺激你的思维和技能的重要工具。 游戏jam的过程并不是经典的游戏开发，但这就是它的全部力量。事实上，因为它会发生在一个非常短的固定的时间内，你必须快读原型化、思考、并作出决定。另外，你应该着眼于游戏机制的基础要素，并保持它的简单性（当你在编写更大的游戏时，这个技巧也是适用的）。&lt;/p&gt; &lt;p&gt;实验心得功能特性、用新的东西测试你的技能、甚至是简单的尝试和失败，这都是一个很棒的练习。&lt;/p&gt; &lt;p&gt;你可以让自己重新振作，在一个长期的项目上休息一下。&lt;/p&gt;...</description>
+        <pubDate>Sun, 21 Jul 2019 15:53:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%92%8Cunity%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%848%E6%9D%A1%E5%BB%BA%E8%AE%AE/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%92%8Cunity%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%848%E6%9D%A1%E5%BB%BA%E8%AE%AE/</guid>
+        
+        <tag>游戏开发</tag>
+        
+        <tag>unity</tag>
+        
+        <tag>建议</tag>
+        
+        <tag>初学者</tag>
+        
+      </item>
+    
+      <item>
+        <title>LeetCode算法题解</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;LeetCode 第一道题: Two Sum，难度简单。&lt;/p&gt; &lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Example: Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt; &lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;lineno&quot;&gt; 1 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;lineno&quot;&gt; 2 &lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;...</description>
+        <pubDate>Sun, 21 Jul 2019 15:51:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Two-Sum/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Two-Sum/</guid>
+        
+        <tag>LeetCode</tag>
+        
+        <tag>算法</tag>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#examples&quot; id=&quot;markdown-toc-examples&quot;&gt;Examples&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;#table&quot; id=&quot;markdown-toc-table&quot;&gt;Table&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#list&quot; id=&quot;markdown-toc-list&quot;&gt;List&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#image-responsive-plugin-imager&quot; id=&quot;markdown-toc-image-responsive-plugin-imager&quot;&gt;Image responsive (plugin Imager)&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#code-in-one-line---text&quot; id=&quot;markdown-toc-code-in-one-line---text&quot;&gt;Code in one line - Text&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#unlighted-code&quot; id=&quot;markdown-toc-unlighted-code&quot;&gt;Unlighted code&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://www.webpagefx.com/tools/emoji-cheat-sheet/&quot; target=&quot;_blank&quot;&gt;Emoji Syntax&lt;/a&gt;&lt;/p&gt; &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt; &lt;p&gt;To add new...</description>
+        <pubDate>Sat, 03 Feb 2018 21:22:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/welcome-to-jekyll/</guid>
+        
+        <tag>example</tag>
+        
+        <tag>welcome</tag>
+        
+        <tag>jekyll</tag>
+        
+        <tag>typing</tag>
+        
+        <tag>özel-bitcoin-adresi</tag>
         
       </item>
     

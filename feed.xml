@@ -19,9 +19,86 @@
     <description>记录编程生活的点点滴滴，努力提升自己。</description>
     <link>https://flyingeye.cn/</link>
     <atom:link href="https://flyingeye.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Jul 2019 01:22:57 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jul 2019 01:22:57 +0800</lastBuildDate>
+    <pubDate>Sun, 04 Aug 2019 21:27:47 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Aug 2019 21:27:47 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Unity-RectTransform中localPosition与anchoredPosition的区别</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;Unity version 版本2018.2.14f1 设置ui的anchoredPosition时候，发现不能设置到想要的位置，后来发现在当Anchors的Min和Max都设置为(0.5, 0.5)时，才会正确的。&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Inspector面板中Transform的位置信息显示的是localPosition, 表示的是子物体的pivot相对于父物体的pivot的座标&lt;/li&gt; &lt;li&gt;Inspector面板中RectTransform的位置信息显示的是anchoredPosition3D, anchoredPosition3D表示的是子物体的pivot相对于anchor的座标，当anchor不是一个点时表示前3个元素（left，top，z）&lt;/li&gt; &lt;li&gt;当子物体的anchor与父物体的pivot座标重合时anchoredPosition3D与localPosition相等&lt;/li&gt; &lt;/ol&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these...</description>
+        <pubDate>Sun, 04 Aug 2019 09:10:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%BB%93-Unity-RectTransform%E4%B8%ADlocalPosition%E4%B8%8EanchoredPosition%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%BB%93-Unity-RectTransform%E4%B8%ADlocalPosition%E4%B8%8EanchoredPosition%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+        
+        <tag>RectTransform</tag>
+        
+        <tag>localPosition</tag>
+        
+        <tag>anchoredPosition</tag>
+        
+        <tag>区别</tag>
+        
+      </item>
+    
+      <item>
+        <title>ARTS挑战第二周</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#arts挑战第一周&quot; id=&quot;markdown-toc-arts挑战第一周&quot;&gt;ARTS挑战第一周&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;h2 id=&quot;arts挑战第一周&quot;&gt;ARTS挑战第一周&lt;/h2&gt; &lt;p&gt;Algorithm: &lt;a href=&quot;http://flyingeye.cn/blog/LeetCode算法题解-AddTwoNumbers&quot; target=&quot;_blank&quot;&gt;LeetCode算法题解-Add Two Numbers&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Review: &lt;a href=&quot;http://flyingeye.cn/blog/技术文章翻译-在开始商业游戏之前需要定义的8个关键点&quot; target=&quot;_blank&quot;&gt;技术文章翻译-在开始商业游戏之前需要定义的8个关键点&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Tip: &lt;a href=&quot;http://flyingeye.cn/blog/工作小结-Unity-RectTransform中localPosition与anchoredPosition的区别&quot; target=&quot;_blank&quot;&gt;工作小结-Unity-RectTransform中localPosition与anchoredPosition的区别&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Share: &lt;a href=&quot;http://flyingeye.cn/blog/听书笔记-数据结构与算法之美(1)&quot; target=&quot;_blank&quot;&gt;听书笔记-数据结构与算法之美(1)&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding Spotify Musics. To...</description>
+        <pubDate>Sun, 04 Aug 2019 09:02:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E4%BA%8C%E5%91%A8/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E4%BA%8C%E5%91%A8/</guid>
+        
+        <tag>ARTS</tag>
+        
+        <tag>ARTS挑战</tag>
+        
+        <tag>挑战</tag>
+        
+      </item>
+    
+      <item>
+        <title>在开始商业游戏之前需要定义的8个关键点</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;文章来源：&lt;a href=&quot;https://medium.com/ironequal/8-crucial-points-to-define-before-starting-a-commercial-game-135024fc8130&quot; target=&quot;_blank&quot;&gt;8 crucial points to define before starting a commercial game&lt;/a&gt;&lt;/p&gt; &lt;p&gt;这篇博客文章只是我们内部指导的一个很简单的部分，它试图去面对一个现实：如何让一家公司和5个人继续生存下去。这并不完美，而且不能保证什么。。。。你的公司仍旧有可能下沉。 我们目前正在决定在REPULSE: Galactic Rivals之后我们将制作什么游戏。MAZE的团队仍旧在研发MAZE，不用担心。&lt;/p&gt; &lt;p&gt;由于我们必须负担公司的所有费用，需要吃饭和支付私人飞机机库的费用，我们显然对游戏的未来雄心勃勃。在这个想法中，我将和你们分享我们的过程，以及在开始大规模投资到一个产品之前我们必须要考虑的事情。 制作一款非商业目的的游戏是完全可以的，但请不要再我的Twitter上抱怨你有多穷，或者游戏产业没有钱。&lt;/p&gt; &lt;p&gt;1、所有的一切开始于乐趣和创造性 很明显我们的第一步是乱搞一些原型来运行，看看是否有一些有趣的潜力。 如果你对你的第一个原型很满意，那么是时候定义一些东西了，这些东西可以让你的开发保持健康发展，并能检验是不是有商业潜力。 永远要记住，在你设计之初记录的内容是要更改的。&lt;/p&gt; &lt;p&gt;2、设计+故事 当你已经通过原型验证了一些设计点，是时候把它们记录下来了。你应该定义你的意图是什么，你想制作什么样的游戏，并详细描述你的设计组件、机制，背景故事/环境，节奏，并尝试开始一个游戏循环。这将帮助你在接下来的几个月研发后不会迷失方向，并且能清除的识别你是否开始改变游戏的核心内容。 列出你的选项可以帮助你更加了解他们，并和团队分享他们。&lt;/p&gt; &lt;p&gt;3、美术和音效 在这里，你将要定义你的美术风格，你想要给你的产品的定位，色彩等等。你也可以谈谈你对音乐和音效的设计的意图和灵感。 我们确实把美术和设计分开了，但是只是为了表现的目的。永远记住，在游戏中美术服务于设计，设计服务于美术。&lt;/p&gt; &lt;p&gt;4、市场调研 找到你的受众并不是仅仅随便找一个人，也不是为了最终推广你的游戏。&lt;/p&gt; &lt;p&gt;定义和研究你的受众对于做设计和美术决策是很重要的。这使你站在你的玩家的立场上考虑问题。 你的核心用户必须必诸如Dota玩家、FPS玩家或硬核玩家更精确。你的核心用户是你的游戏机制、你的故事和你的美术风格的交集。 当你研究你的用户的时候，不要带着偏见。你可以让数据告诉你很多事情。制作一款小众游戏是可以的。不要这样做。&lt;/p&gt; &lt;p&gt;5、产品 在这里你将要定义项目的范围和潜在的回溯计划。你可以将你的范围划分为3部分：核心游戏玩法、功能和内容。功能为游戏增加价值和乐趣，但是不应该是至关重要的。记住，你不能靠着功能来拯救游戏。&lt;/p&gt; &lt;p&gt;根据你的资金和计划，内容可能是最具有可扩展性的。但是要尽量定义一个能使游戏有趣的最小的内容量。&lt;/p&gt; &lt;p&gt;例如，在Subscribe &amp;amp; Punch（一款2D战斗游戏），我们将游戏角色最小数量定位为4个，以保持游戏的趣味性。如果有更多的时间和/或着资金，我们可以制作6个、8个甚至更多个角色！&lt;/p&gt; &lt;p&gt;内容也是将DLC硬塞给玩家的最简单方法，但添加的功能可能会带来更高的感知价值（或者修复你的核心玩法，但是如果你已经做到了这一点，你就不应该在媒体上浪费时间）&lt;/p&gt; &lt;p&gt;根据你的范围和计划，你可以根据团队和预算来指定你的需求。如果你没有足够的钱去创造你所设想的游戏，请不要愚蠢的消减你的游戏。试着真正的看看你是如何才能用你所拥有的资金创造出一款全新有趣的游戏。&lt;/p&gt; &lt;p&gt;6、挑战 尽早列出你最大的挑战是什么，这一点很重要。这将极大的帮助你避免他们。你还可以定义一些KPI,这些KPI将允许你能度量你再这些挑战中的表现。&lt;/p&gt; &lt;p&gt;大部分时间保持乐观是很重要的，但不是在这里。 不要欺骗自己，尽可能理性的找出可能出错的地方。&lt;/p&gt; &lt;p&gt;7、营销和沟通 你可以定义你将在哪些平台上推广你的游戏，并且列出潜在的受众（这可以帮助你定义你的目标）。同时，考虑一下你再游戏中所使用的语气，它能反映出游戏的整体内容。 尽可能快、持续的沟通。没有人会偷走你的游戏，如果真的发生了，那就创造一个更好的。&lt;/p&gt; &lt;p&gt;8、业务 在这里，在考虑你的游戏范围和受众的同时，你可以设置一下你的价格目标。不要太高，也不要太低。你的游戏需要看起来对玩家有价值。你也可以定义你想要发布游戏的平台。根据之前的所有信息，你能计算出需要卖出多少才能实现收支平衡。&lt;/p&gt; &lt;p&gt;以独特的卖点收尾。你的游戏怎么样了？&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd...</description>
+        <pubDate>Sun, 04 Aug 2019 07:53:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91-%E5%9C%A8%E5%BC%80%E5%A7%8B%E5%95%86%E4%B8%9A%E6%B8%B8%E6%88%8F%E4%B9%8B%E5%89%8D%E9%9C%80%E8%A6%81%E5%AE%9A%E4%B9%89%E7%9A%848%E4%B8%AA%E5%85%B3%E9%94%AE%E7%82%B9/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91-%E5%9C%A8%E5%BC%80%E5%A7%8B%E5%95%86%E4%B8%9A%E6%B8%B8%E6%88%8F%E4%B9%8B%E5%89%8D%E9%9C%80%E8%A6%81%E5%AE%9A%E4%B9%89%E7%9A%848%E4%B8%AA%E5%85%B3%E9%94%AE%E7%82%B9/</guid>
+        
+        <tag>游戏开发</tag>
+        
+        <tag>商业游戏</tag>
+        
+        <tag>8个关键点</tag>
+        
+      </item>
+    
+      <item>
+        <title>LeetCode算法题解</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;LeetCode 第二道题: Add Two Numbers，难度简单。&lt;/p&gt; &lt;p&gt;You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4) Output: 7 -&amp;gt; 0 -&amp;gt; 81 Explanation: 342 + 465 = 807.&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;lineno&quot;&gt; 1...</description>
+        <pubDate>Sun, 04 Aug 2019 07:51:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Add-Two-Numbers/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Add-Two-Numbers/</guid>
+        
+        <tag>LeetCode</tag>
+        
+        <tag>算法</tag>
+        
+      </item>
+    
+      <item>
+        <title>听书笔记：数据结构与算法之美(1)</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#第一节-为什么学习数据结构和算法&quot; id=&quot;markdown-toc-第一节-为什么学习数据结构和算法&quot;&gt;第一节 为什么学习数据结构和算法&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#第二节-如何抓住重点系统高效上午学习数据结构与算法&quot; id=&quot;markdown-toc-第二节-如何抓住重点系统高效上午学习数据结构与算法&quot;&gt;第二节 如何抓住重点、系统高效上午学习数据结构与算法&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;从今天开始学习极客时间王争老师的数据结构与算法之美专栏，并记录笔记。&lt;/p&gt; &lt;h2 id=&quot;第一节-为什么学习数据结构和算法&quot;&gt;第一节 为什么学习数据结构和算法&lt;/h2&gt; &lt;ol&gt; &lt;li&gt;找工作： 校招的时候，参加面试的同学没有通常没有实际项目经验，公司只能考察他们的基础知识是否牢固。社招就更不用说了，越是厉害的公司越是注重考察数据结构和算法这种基础类的知识。相对于短期的能力，他们更看重你的长期能力。&lt;/li&gt; &lt;li&gt;工作后 （1）我们学习任何知识都是为了“用”的，是为了解决实际工作问题的。 （2）业务开发，虽然平时都只是做增删改查或者使用已经封装好的API接口、类库来堆砌、翻译业务逻辑，很少用到数据结构和算法，但是不需要自己实现并不代表什么都不需要了解。 在我们使用的各种框架中，一般都揉和了很多基础数据结构和算法的设计思想。掌握数据结构和算法，不管对于了解框架源码还是理解其背后的设计思想，都是非常有用的。 如果能明白接口、类库的底层原理，就能更好的使用它们。 （3）基础架构研发工程师，写出达到开源水平的框架才是你的目标。&lt;/li&gt; &lt;li&gt;编程能力 性能好坏起码是其中的一个判断标准。 掌握了数据结构和算法，你看待问题的深度，解决问题的角度就会完全不一样。&lt;/li&gt; &lt;/ol&gt; &lt;h2 id=&quot;第二节-如何抓住重点系统高效上午学习数据结构与算法&quot;&gt;第二节 如何抓住重点、系统高效上午学习数据结构与算法&lt;/h2&gt; &lt;ol&gt; &lt;li&gt;什么是数据结构和算法 （1）广义上：数据结构是一组数据的存储方式，算法是作用在数据结构上的一组操作方法。 （2）狭义上：是指一些著名的数据结构和算法。 （3）数据结构是服务于算法的，算法是作用在特定的数据结构之上的。&lt;/li&gt; &lt;li&gt;算法时间复杂度分析&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;这个几乎占了数据结构和算法这门课的半壁江山，是数据结构和算法学习的精髓。&lt;/p&gt; &lt;ol&gt; &lt;li&gt;20个最常用、最基础的数据结构和算法 初学者学习算法的重点是掌握这20个最常用、最基础的数据结构和算法，不管是应付面试还是工作需要，只要集中精力逐一攻克这20个知识点就足够了。 这里面有10个数据结构：数据、链表、栈、队列、散列表、二叉树、堆、图、跳表、Trie树；10个算法：递归、排序、二分查找、搜索、哈希算法、贪心算法、分治算法、回溯算法、动态规划、字符串匹配算法。 学习过程中不要死记硬背，不要为了学习而学习，要学习它的来历、自身的特点、适合解决的问题以及实际应用场景。 4.学习技巧 （1）边学边练，适度刷题。&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;可以适度刷题，但一定不要浪费太多时间在刷题上。学习的目的还是掌握，然后应用。除非面试的是facebook、google这样的公司 （2）多问、多思考、多互动 （3）打怪升级法&lt;/p&gt; &lt;p&gt;我们在枯燥的学习过程中，可以给自己设定一个切实可行的目标。 （4）知识沉淀 学习知识的过程就是反复迭代、不断沉淀的过程。&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body...</description>
+        <pubDate>Sun, 04 Aug 2019 07:16:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)/</guid>
+        
+        <tag>数据结构</tag>
+        
+        <tag>数据结构与算法</tag>
+        
+        <tag>算法</tag>
+        
+        <tag>集成</tag>
+        
+      </item>
     
       <item>
         <title>ARTS挑战第一周</title>

@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title> 听书笔记：数据结构与算法之美(1) | 编程人生 - 记录编程生活的点点滴滴，努力提升自己。</title><meta name=description content=""><meta http-equiv="cache-control" content="max-age=29030400"/><meta http-equiv="pragma" content="public"><meta name="keywords" content="编程, 程序, 自我提升" /><meta name="author" content="xiaofeng" /><meta http-equiv="Content-Language" content="zh"><meta property="og:locale" content="zh" /><meta property="og:site_name" content="编程人生" /><meta property="og:type" content="WebSite" /><meta property="og:url" content="https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)/" /><meta property="og:description" content="记录编程生活的点点滴滴，努力提升自己。" /><meta property="og:title" content="听书笔记：数据结构与算法之美(1)" /><link rel="canonical" href="https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)/"><link rel="alternate" type="application/rss+xml" title="编程人生" href="https://flyingeye.cn/feed.xml"><link rel="icon" type="image/png" sizes="32x32" href="https://flyingeye.cn/assets/images/favicon/favicon-32x32.ico"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Space+Mono:400,400i,700,700i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script><link rel="stylesheet" href="/assets/css/vendor.css"><link rel="stylesheet" href="/assets/css/hacking.css"></head><body id="top"><div class="layout_default layout_default__bg">
+<div class="container layout_default__container"><div class="row">
+<div class="p-0 col-lg-3 sidebar sidebar__bg"><div class="container-fluid">
+<div class="sidebar__header"><div class="mt-4 row">
+<div class="mb-0 mb-lg-4 col-3 col-sm-3 col-lg-12"> <a class="sidebar__img sidebar__img-noflip" href="https://flyingeye.cn/"> <img class="img-fluid mx-auto d-block border-dashed" src="/assets/images/avatar/WechatIMG9.jpeg" width="165" height="165" alt="Avatar"> </a>
+</div>
+<div class=" col-9 col-sm-9 col-lg-12"> <a class="text-d-none sidebar__title" href="https://flyingeye.cn/"><h1 class="sidebar__title--text">乐生</h1></a>
+</div>
+</div></div>
+<div class="mt-4 sidebar__menu"><div class="row"><ul class="px-3 mx-2 px-lg-3 mx-lg-3 sidebar__menu-list">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-home"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/">首页</a>
+</li>
+<hr class="hr-dashed">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-edit"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/">博客</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-search"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/search/">搜索</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-tags"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/tags/">标签</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-envelope"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/contact/">联系</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-briefcase"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/projects/">项目</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-file-alt"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/resume/">简历</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-rss"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/feed.xml" target="_blank">Feed</a>
+</li>
+</ul></div></div>
+<div class="sidebar__socials"><div class="row justify-content-center"><ul class="p-0 list-none sidebar__socials-list">
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title"></h4></div>
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title">联系我!</h4></div>
+<li id="github" class="sidebar__socials-item"> <a class="mr-3 sidebar__socials-link" title="GitHub" href="https://github.com" target="_blank"><i class="fab fa-github sidebar__socials-icon" aria-hidden="true"></i></a>
+</li>
+</ul></div></div>
+</div></div>
+<div class="pt-4 pt-lg-0 col-lg-9 border-l-dashed border-r-dashed layout_default__content"><div class="p-lg-4 mt-4 mt-lg-0 layout_post" itemscope itemtype="http://schema.org/BlogPosting"><div class="container-fluid">
+<div class="row"><h1 class="font-weight-bold layout_post__title">听书笔记：数据结构与算法之美(1)</h1></div>
+<div class="mb-2 mt-2 mb-lg-4 mt-lg-4 layout_post__date"><div class="row"><div class=" col-12 col-lg-12 offset-lg-0 col-sm-12 "><div class="row justify-content-start"> <time class="layout_post__time"> <i class="far fa-calendar-alt"></i> 八月 04, 2019 </time>
+</div></div></div></div>
+<div class="layout_post__tags"><div class="row"> <i class="fa fa-tags"></i> Tags:  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95">数据结构与算法</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E7%AE%97%E6%B3%95">算法</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E9%9B%86%E6%88%90">集成</a>, </div></div>
+<div class="layout-post__reading_time"><div class="row"> 阅读“1分钟內”。</div></div>
+<div class="layout_post__content"><div class="row d-block">
+<ul id="markdown-toc">
+<li><a href="#%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95" id="markdown-toc-第一节-为什么学习数据结构和算法">第一节 为什么学习数据结构和算法</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E5%A6%82%E4%BD%95%E6%8A%93%E4%BD%8F%E9%87%8D%E7%82%B9%E7%B3%BB%E7%BB%9F%E9%AB%98%E6%95%88%E4%B8%8A%E5%8D%88%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95" id="markdown-toc-第二节-如何抓住重点系统高效上午学习数据结构与算法">第二节 如何抓住重点、系统高效上午学习数据结构与算法</a></li>
+<li><a href="#gist-code" id="markdown-toc-gist-code">Gist code</a></li>
+</ul>
+<p>Hi! <img class="emoji" title=":hand:" alt=":hand:" src="https://github.githubassets.com/images/icons/emoji/unicode/270b.png" height="20" width="20"></p>
+<p>从今天开始学习极客时间王争老师的数据结构与算法之美专栏，并记录笔记。</p>
+<h2 id="第一节-为什么学习数据结构和算法">第一节 为什么学习数据结构和算法</h2>
+<ol>
+<li>找工作： 校招的时候，参加面试的同学没有通常没有实际项目经验，公司只能考察他们的基础知识是否牢固。社招就更不用说了，越是厉害的公司越是注重考察数据结构和算法这种基础类的知识。相对于短期的能力，他们更看重你的长期能力。</li>
+<li>工作后 （1）我们学习任何知识都是为了“用”的，是为了解决实际工作问题的。 （2）业务开发，虽然平时都只是做增删改查或者使用已经封装好的API接口、类库来堆砌、翻译业务逻辑，很少用到数据结构和算法，但是不需要自己实现并不代表什么都不需要了解。 在我们使用的各种框架中，一般都揉和了很多基础数据结构和算法的设计思想。掌握数据结构和算法，不管对于了解框架源码还是理解其背后的设计思想，都是非常有用的。 如果能明白接口、类库的底层原理，就能更好的使用它们。 （3）基础架构研发工程师，写出达到开源水平的框架才是你的目标。</li>
+<li>编程能力 性能好坏起码是其中的一个判断标准。 掌握了数据结构和算法，你看待问题的深度，解决问题的角度就会完全不一样。</li>
+</ol>
+<h2 id="第二节-如何抓住重点系统高效上午学习数据结构与算法">第二节 如何抓住重点、系统高效上午学习数据结构与算法</h2>
+<ol>
+<li>什么是数据结构和算法 （1）广义上：数据结构是一组数据的存储方式，算法是作用在数据结构上的一组操作方法。 （2）狭义上：是指一些著名的数据结构和算法。 （3）数据结构是服务于算法的，算法是作用在特定的数据结构之上的。</li>
+<li>算法时间复杂度分析</li>
+</ol>
+<p>这个几乎占了数据结构和算法这门课的半壁江山，是数据结构和算法学习的精髓。</p>
+<ol><li>20个最常用、最基础的数据结构和算法 初学者学习算法的重点是掌握这20个最常用、最基础的数据结构和算法，不管是应付面试还是工作需要，只要集中精力逐一攻克这20个知识点就足够了。 这里面有10个数据结构：数据、链表、栈、队列、散列表、二叉树、堆、图、跳表、Trie树；10个算法：递归、排序、二分查找、搜索、哈希算法、贪心算法、分治算法、回溯算法、动态规划、字符串匹配算法。 学习过程中不要死记硬背，不要为了学习而学习，要学习它的来历、自身的特点、适合解决的问题以及实际应用场景。 4.学习技巧 （1）边学边练，适度刷题。</li></ol>
+<p>可以适度刷题，但一定不要浪费太多时间在刷题上。学习的目的还是掌握，然后应用。除非面试的是facebook、google这样的公司 （2）多问、多思考、多互动 （3）打怪升级法</p>
+<p>我们在枯燥的学习过程中，可以给自己设定一个切实可行的目标。 （4）知识沉淀 学习知识的过程就是反复迭代、不断沉淀的过程。</p>
+<h2 id="gist-code">Gist code</h2>
+<script src="https://gist.github.com/a3672f19f0f2ac35810b.js"> </script><p><br></p>
+<p>To use, see:<a href="https://jektify.github.io" target="_blank">Jektify - Doc</a></p>
+<dl class="jektify jektify--dark jektify--custom">
+<dt class="jektify__header jektify__header--dark jektify__header--custom"> <a class="jektify__brand jektify__brand--dark jektify__brand--custom" href="https://jektify.github.io" target="_blank">jektify</a> <i class="jektify__year jektify__year--dark jektify__year--custom">© 2019 </i> <span class="jektify__button jektify__button--dark jektify__button--custom jektify__button--open">+</span>
+</dt>
+<dd class="jektify__body jektify__body--dark jektify__body--custom" style="display: block">
+<h1 class="jektify__title jektify__title--dark jektify__user--dark jektify__title--custom" style="display: none;">Música</h1>
+<p class="jektify__description jektify__description--dark jektify__description--custom" style="display: none;">Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these musics.</p>
+<div class="jektify__tracklist jektify__tracklist--dark jektify__tracklist--custom"> <iframe id="jektify__track" class="jektify__track jektify__track--dark jektify__track--custom" src="https://embed.spotify.com/?uri=spotify:track:62qsgMnY4wg8nE5qjyOdWO&amp;theme=dark" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+</div>
+</dd>
+</dl>
+<p>Goodbye! <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+<hr style="border-top: 1px solid #9D9D9D ; color: #9D9D9D ;" class="endpost">
+</div></div>
+<div class="layout_post__dayquote">
+<div class="row"><h2 class="layout_post__dayquote-title">The word of the day!</h2></div>
+<div class="row"><p class="layout_post__dayquote-description">Put a very powerful message.</p></div>
+</div>
+<div class="layout_post__share">
+<div class="row justify-content-center"><h2>分享</h2></div>
+<div class="row justify-content-center">
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-fb" href="#" title="" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Facebook</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-ln" href="http://www.linkedin.com/cws/share?url=https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)/" onclick='window.open(this.href,"popupwindow","status=0,height=500,width=700,resizable=0,top=50,left=100");return false;' target="_blank" title="">Linkedin</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-tw" href="https://twitter.com/intent/tweet?text=https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)/%20-%20%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%9A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(1)%20by%20" target="_blank" title="">Twitter</a>
+</div>
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+</div>
+</div>
+<div class="layout_post__author"><div class="row"><div class="col-12 p-0 col-lg-12 ">
+<p class="layout_post__author-title">作者</p>
+<h2 class="font-weight-bold layout_post__author-name">xiaofeng</h2>
+<p class="layout_post__author-description">Hi! I'm the xiaofeng. :)</p>
+</div></div></div>
+</div></div></div>
+</div></div>
+<div class="footer">
+<div class="container-fluid"><div class="row">
+<div class="col-12 col-md-4"> <span class="text-center footer__copyright">编程人生 © 2015-2019 • All right reserved.</span>
+</div>
+<div class="col-12 col-md-4 d-none d-md-block"> <span class="text-center footer__message">Simplicity is fashionable.</span>
+</div>
+<div class="col-12 col-md-4"> <span class="text-center footer__madeby">Made with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> using <a href="https://github.com/williamcanin/typing-jekyll-template" target="_blank">Typing</a> Theme.</span>
+</div>
+</div></div>
+<a class="footer__scrrolltop" href="#top"><i class="fas fa-caret-up"></i></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script type="text/javascript" src="https://flyingeye.cn/assets/js/post.js"></script> <script src="https://flyingeye.cn/assets/vendor/jektify/js/jektify.min.js"></script>
+</div></body></html>

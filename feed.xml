@@ -19,9 +19,92 @@
     <description>记录编程生活的点点滴滴，努力提升自己。</description>
     <link>https://flyingeye.cn/</link>
     <atom:link href="https://flyingeye.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Aug 2019 22:07:00 +0800</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2019 22:07:00 +0800</lastBuildDate>
+    <pubDate>Sun, 01 Sep 2019 16:58:13 +0800</pubDate>
+    <lastBuildDate>Sun, 01 Sep 2019 16:58:13 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>项目上线小细节注意事项记录</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand: 项目上线了，有一些之前不知道的或者出现比较频繁的需要事情记录一下。 1、IOS预约注册的开放下载时间是当地时间，这个对全球发布的游戏来说，需要注意一下。比如设置是凌晨0点发布，结果是当地时间0点，不是UTC时间。这样加拿大和新西兰比其他地区要早发布。 2、网络问题 全球网络环境复杂多变，需要对这部分进行测试和持续关注。要多注意WIFI访问、4G(5G)等通信网络环境访问、ipv6和ipv4线路访问以及大量玩家在线时的通信状态等。 3、服务器部署问题 这个需要前期测试好自动化部署脚本。这次上线一个很简单的服务器部署步骤给漏了。 4、服务器 要持续关注正式环境中有大量在线人数时，游戏数据通信长度、数据库一次取大量数据、数据库索引问题 5、网关 请求队列的堵塞、排队时间和长度等&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these musics. &lt;/p&gt;...</description>
+        <pubDate>Sat, 31 Aug 2019 09:10:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%BB%93-%E9%A1%B9%E7%9B%AE%E4%B8%8A%E7%BA%BF%E5%B0%8F%E7%BB%86%E8%8A%82%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E8%AE%B0%E5%BD%95/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%BB%93-%E9%A1%B9%E7%9B%AE%E4%B8%8A%E7%BA%BF%E5%B0%8F%E7%BB%86%E8%8A%82%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E8%AE%B0%E5%BD%95/</guid>
+        
+        <tag>项目上线</tag>
+        
+        <tag>细节</tag>
+        
+        <tag>注意事项</tag>
+        
+        <tag>记录</tag>
+        
+      </item>
+    
+      <item>
+        <title>ARTS挑战第四周</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#arts挑战第四周&quot; id=&quot;markdown-toc-arts挑战第四周&quot;&gt;ARTS挑战第四周&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;h2 id=&quot;arts挑战第四周&quot;&gt;ARTS挑战第四周&lt;/h2&gt; &lt;p&gt;Algorithm: &lt;a href=&quot;http://flyingeye.cn/blog/LeetCode算法题解-Median-of-Two-Sorted-Arrays/&quot; target=&quot;_blank&quot;&gt;LeetCode算法题解-Median of Two Sorted Arrays&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Review: &lt;a href=&quot;http://flyingeye.cn/blog/Unity-Android优化指南2/&quot; target=&quot;_blank&quot;&gt;Unity: Android优化指南(下)&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Tip: &lt;a href=&quot;http://flyingeye.cn/blog/工作小结-项目上线小细节注意事项记录/&quot; target=&quot;_blank&quot;&gt;工作小结-项目上线小细节注意事项记录&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Share: &lt;a href=&quot;http://flyingeye.cn/blog/听书笔记-数据结构与算法之美(3)/&quot; target=&quot;_blank&quot;&gt;听书笔记-数据结构与算法之美(3)&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding...</description>
+        <pubDate>Sat, 31 Aug 2019 09:02:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E5%9B%9B%E5%91%A8/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E5%9B%9B%E5%91%A8/</guid>
+        
+        <tag>ARTS</tag>
+        
+        <tag>ARTS挑战</tag>
+        
+        <tag>挑战</tag>
+        
+      </item>
+    
+      <item>
+        <title>Unity: Android优化指南(下)</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#光照&quot; id=&quot;markdown-toc-光照&quot;&gt;光照&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#烘焙光照&quot; id=&quot;markdown-toc-烘焙光照&quot;&gt;烘焙光照&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#光照探测器&quot; id=&quot;markdown-toc-光照探测器&quot;&gt;光照探测器&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#影子投影器&quot; id=&quot;markdown-toc-影子投影器&quot;&gt;影子投影器&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#阴影&quot; id=&quot;markdown-toc-阴影&quot;&gt;阴影&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#定向光设置&quot; id=&quot;markdown-toc-定向光设置&quot;&gt;定向光设置&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#质量设置&quot; id=&quot;markdown-toc-质量设置&quot;&gt;质量设置&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#像素数量&quot; id=&quot;markdown-toc-像素数量&quot;&gt;像素数量：&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#纹理&quot; id=&quot;markdown-toc-纹理&quot;&gt;纹理&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#ui&quot; id=&quot;markdown-toc-ui&quot;&gt;UI&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;#sprites&quot; id=&quot;markdown-toc-sprites&quot;&gt;Sprites&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#canvas&quot; id=&quot;markdown-toc-canvas&quot;&gt;Canvas&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#texts--images&quot; id=&quot;markdown-toc-texts--images&quot;&gt;Texts &amp;amp; Images&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#字体&quot; id=&quot;markdown-toc-字体&quot;&gt;字体&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#ui材料&quot; id=&quot;markdown-toc-ui材料&quot;&gt;UI材料&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#rect-mask-2d&quot; id=&quot;markdown-toc-rect-mask-2d&quot;&gt;Rect Mask 2D&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#scroll-rect&quot; id=&quot;markdown-toc-scroll-rect&quot;&gt;Scroll Rect&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#canvas-group-and-menu-animations&quot; id=&quot;markdown-toc-canvas-group-and-menu-animations&quot;&gt;Canvas Group and Menu Animations&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#着色器&quot; id=&quot;markdown-toc-着色器&quot;&gt;着色器&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#结论&quot; id=&quot;markdown-toc-结论&quot;&gt;结论：&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;文章来源：&lt;a href=&quot;https://medium.com/ironequal/android-optimization-with-unity-3504b34f00b0&quot; target=&quot;_blank&quot;&gt;Unity: Android Optimization Guide&lt;/a&gt;&lt;/p&gt; &lt;h4 id=&quot;光照&quot;&gt;光照&lt;/h4&gt; &lt;p&gt;现在开始渲染优化部分！首先，是光照！ 如果可能不要使用动态的光照，而是选择无光照的纹理，因为光照计算会占用很多资源，尤其是要渲染很多对象。&lt;/p&gt; &lt;h4 id=&quot;烘焙光照&quot;&gt;烘焙光照&lt;/h4&gt; &lt;div class=&quot;row imager&quot; style=&quot;margin: 40px 0px;&quot;&gt; &lt;img...</description>
+        <pubDate>Sat, 31 Aug 2019 07:53:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/Unity-Android%E4%BC%98%E5%8C%96%E6%8C%87%E5%8D%972/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/Unity-Android%E4%BC%98%E5%8C%96%E6%8C%87%E5%8D%972/</guid>
+        
+        <tag>Unity</tag>
+        
+        <tag>Android</tag>
+        
+        <tag>优化指南</tag>
+        
+      </item>
+    
+      <item>
+        <title>LeetCode算法题解-第四道题</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#第二种解法示例解法&quot; id=&quot;markdown-toc-第二种解法示例解法&quot;&gt;第二种解法，示例解法：&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;LeetCode 第四道题: Median of Two Sorted Arrays，难度困难。&lt;/p&gt; &lt;p&gt;There are two sorted arrays nums1 and nums2 of size m and n respectively.&lt;/p&gt; &lt;p&gt;Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).&lt;/p&gt; &lt;p&gt;You may assume nums1 and nums2 cannot be both empty.&lt;/p&gt; &lt;p&gt;Example 1:&lt;/p&gt; &lt;p&gt;nums1 = [1, 3] nums2 = [2]&lt;/p&gt; &lt;p&gt;The median is 2.0 Example 2:&lt;/p&gt; &lt;p&gt;nums1 = [1, 2] nums2 = [3, 4]&lt;/p&gt; &lt;p&gt;The median is (2 + 3)/2 = 2.5&lt;/p&gt; &lt;p&gt;###第一种解法，算法复杂度不满足要求&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;lineno&quot;&gt; 1 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;...</description>
+        <pubDate>Sat, 31 Aug 2019 07:51:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Median-of-Two-Sorted-Arrays/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Median-of-Two-Sorted-Arrays/</guid>
+        
+        <tag>LeetCode</tag>
+        
+        <tag>算法</tag>
+        
+      </item>
+    
+      <item>
+        <title>听书笔记：数据结构与算法之美(3)</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#均摊时间复杂度&quot; id=&quot;markdown-toc-均摊时间复杂度&quot;&gt;均摊时间复杂度&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#算法学习书籍&quot; id=&quot;markdown-toc-算法学习书籍&quot;&gt;算法学习书籍&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand: 最好情况时间复杂度、最坏情况时间复杂度、平均情况时间复杂度、均摊时间复杂度&lt;/p&gt; &lt;p&gt;最好情况时间复杂度就是，在最理想的情况下，执行这段代码的时间复杂度。 最坏情况时间复杂度就是，在最糟糕的情况下，执行这段代码的时间复杂度。&lt;/p&gt; &lt;p&gt;平均情况时间复杂度计算:&lt;/p&gt; &lt;div class=&quot;row imager&quot; style=&quot;margin: 40px 0px;&quot;&gt; &lt;img class=&quot;img-fluid mx-auto d-block&quot; src=&quot;/assets/images/posts/algorithm_1.png&quot; title=&quot;algorithm_1.png&quot; alt=&quot;algorithm_1.png&quot; /&gt; &lt;/div&gt; &lt;p&gt;这个值就是概率论中的加权平均值，也叫期望值，所有平均时间复杂度全称应该叫做加权平均时间复杂度或者期望时间复杂度。&lt;/p&gt; &lt;h4 id=&quot;均摊时间复杂度&quot;&gt;均摊时间复杂度&lt;/h4&gt; &lt;p&gt;分析方法：摊还分析（或叫平摊分析） 应用场景比较特殊，所有不会经常用到。 对一个数据结构进行一组连续的操作，大部分情况下时间复杂度都很低，只有在个别情况下时间复杂度比较高，而且这些操作之间存在前后端的时序关系，这个时候，我们就可以将这一组操作放在一块分析，看是否能将较高时间复杂度那次操作的耗时，平摊到其他那些时间复杂度较低的操作上。而且，在能够应用均摊时间复杂度分析的场合，一般均摊时间复杂度就等于最好情况时间复杂度。 均摊时间复杂度就是一种特殊的平均时间复杂度。&lt;/p&gt; &lt;h4 id=&quot;算法学习书籍&quot;&gt;算法学习书籍&lt;/h4&gt; &lt;div class=&quot;row imager&quot; style=&quot;margin: 40px 0px;&quot;&gt; &lt;img class=&quot;img-fluid mx-auto d-block&quot; src=&quot;/assets/images/posts/algorithm_2.png&quot; title=&quot;algorithm_2.png&quot; alt=&quot;algorithm_2.png&quot; /&gt; &lt;/div&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark...</description>
+        <pubDate>Sat, 31 Aug 2019 07:16:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(3)/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(3)/</guid>
+        
+        <tag>数据结构</tag>
+        
+        <tag>数据结构与算法</tag>
+        
+        <tag>算法</tag>
+        
+        <tag>最好情况时间复杂度</tag>
+        
+        <tag>最坏情况时间复杂度</tag>
+        
+        <tag>平均情况时间复杂度</tag>
+        
+        <tag>均摊时间复杂度</tag>
+        
+      </item>
     
       <item>
         <title>IntelliJ IDEA使用小技巧</title>

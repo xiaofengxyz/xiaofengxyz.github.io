@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title> 听书笔记：数据结构与算法之美(3) | 编程人生 - 记录编程生活的点点滴滴，努力提升自己。</title><meta name=description content=""><meta http-equiv="cache-control" content="max-age=29030400"/><meta http-equiv="pragma" content="public"><meta name="keywords" content="编程, 程序, 自我提升" /><meta name="author" content="xiaofeng" /><meta http-equiv="Content-Language" content="zh"><meta property="og:locale" content="zh" /><meta property="og:site_name" content="编程人生" /><meta property="og:type" content="WebSite" /><meta property="og:url" content="https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(4)/" /><meta property="og:description" content="记录编程生活的点点滴滴，努力提升自己。" /><meta property="og:title" content="听书笔记：数据结构与算法之美(3)" /><link rel="canonical" href="https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(4)/"><link rel="alternate" type="application/rss+xml" title="编程人生" href="https://flyingeye.cn/feed.xml"><link rel="icon" type="image/png" sizes="32x32" href="https://flyingeye.cn/assets/images/favicon/favicon-32x32.ico"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Space+Mono:400,400i,700,700i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script><link rel="stylesheet" href="/assets/css/vendor.css"><link rel="stylesheet" href="/assets/css/hacking.css"></head><body id="top"><div class="layout_default layout_default__bg">
+<div class="container layout_default__container"><div class="row">
+<div class="p-0 col-lg-3 sidebar sidebar__bg"><div class="container-fluid">
+<div class="sidebar__header"><div class="mt-4 row">
+<div class="mb-0 mb-lg-4 col-3 col-sm-3 col-lg-12"> <a class="sidebar__img sidebar__img-noflip" href="https://flyingeye.cn/"> <img class="img-fluid mx-auto d-block border-dashed" src="/assets/images/avatar/WechatIMG9.jpeg" width="165" height="165" alt="Avatar"> </a>
+</div>
+<div class=" col-9 col-sm-9 col-lg-12"> <a class="text-d-none sidebar__title" href="https://flyingeye.cn/"><h1 class="sidebar__title--text">乐生</h1></a>
+</div>
+</div></div>
+<div class="mt-4 sidebar__menu"><div class="row"><ul class="px-3 mx-2 px-lg-3 mx-lg-3 sidebar__menu-list">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-home"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/">首页</a>
+</li>
+<hr class="hr-dashed">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-edit"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/">博客</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-search"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/search/">搜索</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-tags"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/tags/">标签</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-envelope"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/contact/">联系</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-briefcase"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/projects/">项目</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-file-alt"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/resume/">简历</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-rss"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/feed.xml" target="_blank">Feed</a>
+</li>
+</ul></div></div>
+<div class="sidebar__socials"><div class="row justify-content-center"><ul class="p-0 list-none sidebar__socials-list">
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title"></h4></div>
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title">联系我!</h4></div>
+<li id="github" class="sidebar__socials-item"> <a class="mr-3 sidebar__socials-link" title="GitHub" href="https://github.com" target="_blank"><i class="fab fa-github sidebar__socials-icon" aria-hidden="true"></i></a>
+</li>
+</ul></div></div>
+</div></div>
+<div class="pt-4 pt-lg-0 col-lg-9 border-l-dashed border-r-dashed layout_default__content"><div class="p-lg-4 mt-4 mt-lg-0 layout_post" itemscope itemtype="http://schema.org/BlogPosting"><div class="container-fluid">
+<div class="row"><h1 class="font-weight-bold layout_post__title">听书笔记：数据结构与算法之美(3)</h1></div>
+<div class="mb-2 mt-2 mb-lg-4 mt-lg-4 layout_post__date"><div class="row"><div class=" col-12 col-lg-12 offset-lg-0 col-sm-12 "><div class="row justify-content-start"> <time class="layout_post__time"> <i class="far fa-calendar-alt"></i> 九月 15, 2019 </time>
+</div></div></div></div>
+<div class="layout_post__tags"><div class="row"> <i class="fa fa-tags"></i> Tags:  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95">数据结构与算法</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E7%AE%97%E6%B3%95">算法</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E6%95%B0%E7%BB%84">数组</a>, </div></div>
+<div class="layout-post__reading_time"><div class="row"> 阅读“关于 1 分钟</div></div>
+<div class="layout_post__content"><div class="row d-block">
+<ul id="markdown-toc">
+<li>
+<a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E7%BB%84" id="markdown-toc-什么是数组">什么是数组</a><ul>
+<li><a href="#%E7%BA%BF%E6%80%A7%E8%A1%A8" id="markdown-toc-线性表">线性表</a></li>
+<li><a href="#%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%86%85%E5%AD%98%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E7%9B%B8%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%95%B0%E6%8D%AE" id="markdown-toc-连续的内存存储空间和相同类型的数据">连续的内存存储空间和相同类型的数据</a></li>
+<li><a href="#%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE%E7%9A%84%E5%AE%9E%E7%8E%B0" id="markdown-toc-随机访问的实现">随机访问的实现</a></li>
+<li><a href="#%E8%AF%AF%E5%8C%BA%E6%95%B0%E7%BB%84%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E5%8C%BA%E5%88%AB%E9%93%BE%E8%A1%A8%E9%80%82%E5%90%88%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%98%AFo1%E6%95%B0%E7%BB%84%E9%80%82%E5%90%88%E6%9F%A5%E6%89%BE%E6%9F%A5%E6%89%BE%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%98%AFo1" id="markdown-toc-误区数组和链表的区别链表适合插入和删除操作时间复杂度是o1数组适合查找查找的时间复杂度是o1">误区：数组和链表的区别：“链表适合插入和删除操作，时间复杂度是O(1)；数组适合查找，查找的时间复杂度是O(1)”</a></li>
+</ul>
+</li>
+<li>
+<a href="#%E4%BD%8E%E6%95%88%E7%9A%84%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4" id="markdown-toc-低效的插入和删除">低效的插入和删除</a><ul>
+<li><a href="#%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C" id="markdown-toc-插入操作">插入操作</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C" id="markdown-toc-删除操作">删除操作</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AD%A6%E6%83%95%E6%95%B0%E7%BB%84%E8%AE%BF%E9%97%AE%E8%B6%8A%E7%95%8C%E7%9A%84%E9%97%AE%E9%A2%98" id="markdown-toc-警惕数组访问越界的问题">警惕数组访问越界的问题</a></li>
+<li><a href="#%E5%AE%B9%E5%99%A8%E8%83%BD%E5%90%A6%E4%BB%A3%E6%9B%BF%E6%95%B0%E7%BB%84" id="markdown-toc-容器能否代替数组">容器能否代替数组</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE" id="markdown-toc-如何实现随机访问">如何实现随机访问</a></li>
+<li><a href="#gist-code" id="markdown-toc-gist-code">Gist code</a></li>
+</ul>
+<p>Hi! <img class="emoji" title=":hand:" alt=":hand:" src="https://github.githubassets.com/images/icons/emoji/unicode/270b.png" height="20" width="20"></p>
+<h2 id="什么是数组">什么是数组</h2>
+<p>数据(Array)是一种线性表数据结构。它用一组连续的内存空间，来存储一组具有相同类型的数据。</p>
+<h3 id="线性表">线性表</h3>
+<p>顾名思义，线性表就是数据排成像一条线一样的结构。每个线性表上的数据最多只有前和后两个方向。其实除了数组之外，链表、队列、栈也是线性表结构。 与之相对的是非线性表，比如二叉树、图、堆等，其数据之间并不是简单的前后关系。</p>
+<h3 id="连续的内存存储空间和相同类型的数据">连续的内存存储空间和相同类型的数据</h3>
+<p>这两个限制使它有了堪称杀手锏的特性：随机访问。但同时也造成了很多操作的低效性。比如插入和删除操作。</p>
+<h3 id="随机访问的实现">随机访问的实现</h3>
+<p>例子：长度为10的int型数据int a[] = new int[10];计算机会为数组a[10]分配一块连续的内存空间1000~1039，其中首地址为base_address = 1000;</p>
+<p>当计算机要随机访问数组中的某个元素时它会首先通过下面的寻址公式，计算出该元素的存储的内存地址： a[i]_address = base_address + i * data_type_size</p>
+<p>这个例子中的int类型是4字节，data_type_size = 4字节。</p>
+<h3 id="误区数组和链表的区别链表适合插入和删除操作时间复杂度是o1数组适合查找查找的时间复杂度是o1">误区：数组和链表的区别：“链表适合插入和删除操作，时间复杂度是O(1)；数组适合查找，查找的时间复杂度是O(1)”</h3>
+<p>解释：数组适合查找操作，但是查找的时间复杂度并不为1.即便是排好序的数组用二分查找时间复杂度也是O(logn)。正确的表述是，数组支持随机访问，根据下标随机访问的时间复杂度是O(1);</p>
+<h2 id="低效的插入和删除">低效的插入和删除</h2>
+<h3 id="插入操作">插入操作</h3>
+<p>如果在数组的末尾插入元素，则时间复杂度是O(1)，在数组的开头插入，需要把数组依次往后移动一位，所以最坏时间复杂度是O(n)；因为在每个位置插入的概率是一样的，所以平均情况的时间复杂度是(1+2+…+n)/n = O(n)；</p>
+<p>如果数组是有序的，则插入操作必须按照刚才的方法搬移数据。但如果数据是无序的，只是作为一个存储数据的集合。在这种情况下在第k个位置插入，只需要把第k位的的数据搬移到数组元素的最后，然后把新的元素直接放入第k个位置。</p>
+<p>这种处理思想在快排中有使用。</p>
+<h3 id="删除操作">删除操作</h3>
+<p>和插入类似，删除末尾的元素，时间复杂度是O(1)，删除第一个元素的时间复杂度是O(n)，平均时间复杂度是O(n)。 我们可以先记录下已经删除的数据，每次的删除并不是真正的删除，当数组没有更多的存储空间时，我们在触发一次真正的删除操作，这样就大大的减少；额删除操作导致的数据搬移。</p>
+<p>JVM的标记清除垃圾回收算法就是应用的这个思想。 很多时候我们并不是要去死记硬背某个数据结构或算法，而是要学习它背后的思想和处理技巧，这些东西才是最有价值的。</p>
+<h2 id="警惕数组访问越界的问题">警惕数组访问越界的问题</h2>
+<p>数组越界在c语言中是一种未决行为，并没有规定数组访问越界时编译器应该如何处理。因为访问数组的本质就是访问一段连续的内存，只要数组通过偏移计算得到的内存是可用的，那么程序就可能不会报任何错误。这种情况下一般会出现莫名其妙的错误，很多计算机病毒这正是利用数组越界可用访问非法地址的漏洞来攻击系统的。</p>
+<p>Java会做越界检查。</p>
+<h2 id="容器能否代替数组">容器能否代替数组</h2>
+<p>ArrayList最大的优势就是可用将很多数组操作的细节封装起来，并且支持扩容。 扩容操作涉及到内存的申请和数据的搬移，是比较耗时的，所有如果实现确定需要的存储的数据大小，最好在创建ArrayList的时候事先指定数据的大小。</p>
+<p>1、Java ArrayList无法存储基本数据类型，比如int、long，需要封装Integer、Long类，而AutoBoxing、UnBoxing则有一定的性能消耗，所有如果特别关注性能，或者希望使用基本数据类型就可以选择数组 2、如果数据大小事先已知，并且对数据的操作非常简单，用不到ArrayList提供的大部分方法，也可以直接使用数组。 3、当要表示多维数组时，用数组往往会更加直观。</p>
+<p>总结，对于业务开发，直接使用容器就足够了，省时省力。如果最一些非常底层的开发，比如开发网络框架，性能的优化需要做到极致，这时候数组就会优于容器成为首选。</p>
+<h2 id="如何实现随机访问">如何实现随机访问</h2>
+<h2 id="gist-code">Gist code</h2>
+<script src="https://gist.github.com/a3672f19f0f2ac35810b.js"> </script><p><br></p>
+<p>To use, see:<a href="https://jektify.github.io" target="_blank">Jektify - Doc</a></p>
+<dl class="jektify jektify--dark jektify--custom">
+<dt class="jektify__header jektify__header--dark jektify__header--custom"> <a class="jektify__brand jektify__brand--dark jektify__brand--custom" href="https://jektify.github.io" target="_blank">jektify</a> <i class="jektify__year jektify__year--dark jektify__year--custom">© 2019 </i> <span class="jektify__button jektify__button--dark jektify__button--custom jektify__button--open">+</span>
+</dt>
+<dd class="jektify__body jektify__body--dark jektify__body--custom" style="display: block">
+<h1 class="jektify__title jektify__title--dark jektify__user--dark jektify__title--custom" style="display: none;">Música</h1>
+<p class="jektify__description jektify__description--dark jektify__description--custom" style="display: none;">Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these musics.</p>
+<div class="jektify__tracklist jektify__tracklist--dark jektify__tracklist--custom"> <iframe id="jektify__track" class="jektify__track jektify__track--dark jektify__track--custom" src="https://embed.spotify.com/?uri=spotify:track:62qsgMnY4wg8nE5qjyOdWO&amp;theme=dark" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+</div>
+</dd>
+</dl>
+<p>Goodbye! <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+<hr style="border-top: 1px solid #9D9D9D ; color: #9D9D9D ;" class="endpost">
+</div></div>
+<div class="layout_post__dayquote">
+<div class="row"><h2 class="layout_post__dayquote-title">The word of the day!</h2></div>
+<div class="row"><p class="layout_post__dayquote-description">Put a very powerful message.</p></div>
+</div>
+<div class="layout_post__share">
+<div class="row justify-content-center"><h2>分享</h2></div>
+<div class="row justify-content-center">
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-fb" href="#" title="" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Facebook</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-ln" href="http://www.linkedin.com/cws/share?url=https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(4)/" onclick='window.open(this.href,"popupwindow","status=0,height=500,width=700,resizable=0,top=50,left=100");return false;' target="_blank" title="">Linkedin</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-tw" href="https://twitter.com/intent/tweet?text=https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(4)/%20-%20%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%9A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(3)%20by%20" target="_blank" title="">Twitter</a>
+</div>
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+</div>
+</div>
+<div class="layout_post__author"><div class="row"><div class="col-12 p-0 col-lg-12 ">
+<p class="layout_post__author-title">作者</p>
+<h2 class="font-weight-bold layout_post__author-name">xiaofeng</h2>
+<p class="layout_post__author-description">Hi! I'm the xiaofeng. :)</p>
+</div></div></div>
+</div></div></div>
+</div></div>
+<div class="footer">
+<div class="container-fluid"><div class="row">
+<div class="col-12 col-md-4"> <span class="text-center footer__copyright">编程人生 © 2015-2019 • All right reserved.</span>
+</div>
+<div class="col-12 col-md-4 d-none d-md-block"> <span class="text-center footer__message">Simplicity is fashionable.</span>
+</div>
+<div class="col-12 col-md-4"> <span class="text-center footer__madeby">Made with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> using <a href="https://github.com/williamcanin/typing-jekyll-template" target="_blank">Typing</a> Theme.</span>
+</div>
+</div></div>
+<a class="footer__scrrolltop" href="#top"><i class="fas fa-caret-up"></i></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script type="text/javascript" src="https://flyingeye.cn/assets/js/post.js"></script> <script src="https://flyingeye.cn/assets/vendor/jektify/js/jektify.min.js"></script>
+</div></body></html>

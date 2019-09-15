@@ -1,0 +1,346 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title> 如何将Unity游戏嵌入iOS原生的Swift应用程序 | 编程人生 - 记录编程生活的点点滴滴，努力提升自己。</title><meta name=description content=""><meta http-equiv="cache-control" content="max-age=29030400"/><meta http-equiv="pragma" content="public"><meta name="keywords" content="编程, 程序, 自我提升" /><meta name="author" content="xiaofeng" /><meta http-equiv="Content-Language" content="zh"><meta property="og:locale" content="zh" /><meta property="og:site_name" content="编程人生" /><meta property="og:type" content="WebSite" /><meta property="og:url" content="https://flyingeye.cn/blog/%E5%A6%82%E4%BD%95%E5%B0%86Unity%E6%B8%B8%E6%88%8F%E5%B5%8C%E5%85%A5iOS%E5%8E%9F%E7%94%9F%E7%9A%84Swift%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" /><meta property="og:description" content="记录编程生活的点点滴滴，努力提升自己。" /><meta property="og:title" content="如何将Unity游戏嵌入iOS原生的Swift应用程序" /><link rel="canonical" href="https://flyingeye.cn/blog/%E5%A6%82%E4%BD%95%E5%B0%86Unity%E6%B8%B8%E6%88%8F%E5%B5%8C%E5%85%A5iOS%E5%8E%9F%E7%94%9F%E7%9A%84Swift%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"><link rel="alternate" type="application/rss+xml" title="编程人生" href="https://flyingeye.cn/feed.xml"><link rel="icon" type="image/png" sizes="32x32" href="https://flyingeye.cn/assets/images/favicon/favicon-32x32.ico"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Space+Mono:400,400i,700,700i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script><link rel="stylesheet" href="/assets/css/vendor.css"><link rel="stylesheet" href="/assets/css/hacking.css"></head><body id="top"><div class="layout_default layout_default__bg">
+<div class="container layout_default__container"><div class="row">
+<div class="p-0 col-lg-3 sidebar sidebar__bg"><div class="container-fluid">
+<div class="sidebar__header"><div class="mt-4 row">
+<div class="mb-0 mb-lg-4 col-3 col-sm-3 col-lg-12"> <a class="sidebar__img sidebar__img-noflip" href="https://flyingeye.cn/"> <img class="img-fluid mx-auto d-block border-dashed" src="/assets/images/avatar/WechatIMG9.jpeg" width="165" height="165" alt="Avatar"> </a>
+</div>
+<div class=" col-9 col-sm-9 col-lg-12"> <a class="text-d-none sidebar__title" href="https://flyingeye.cn/"><h1 class="sidebar__title--text">乐生</h1></a>
+</div>
+</div></div>
+<div class="mt-4 sidebar__menu"><div class="row"><ul class="px-3 mx-2 px-lg-3 mx-lg-3 sidebar__menu-list">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-home"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/">首页</a>
+</li>
+<hr class="hr-dashed">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-edit"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/">博客</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-search"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/search/">搜索</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-tags"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/tags/">标签</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-envelope"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/contact/">联系</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-briefcase"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/projects/">项目</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-file-alt"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/resume/">简历</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-rss"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/feed.xml" target="_blank">Feed</a>
+</li>
+</ul></div></div>
+<div class="sidebar__socials"><div class="row justify-content-center"><ul class="p-0 list-none sidebar__socials-list">
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title"></h4></div>
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title">联系我!</h4></div>
+<li id="github" class="sidebar__socials-item"> <a class="mr-3 sidebar__socials-link" title="GitHub" href="https://github.com" target="_blank"><i class="fab fa-github sidebar__socials-icon" aria-hidden="true"></i></a>
+</li>
+</ul></div></div>
+</div></div>
+<div class="pt-4 pt-lg-0 col-lg-9 border-l-dashed border-r-dashed layout_default__content"><div class="p-lg-4 mt-4 mt-lg-0 layout_post" itemscope itemtype="http://schema.org/BlogPosting"><div class="container-fluid">
+<div class="row"><h1 class="font-weight-bold layout_post__title">如何将Unity游戏嵌入iOS原生的Swift应用程序</h1></div>
+<div class="mb-2 mt-2 mb-lg-4 mt-lg-4 layout_post__date"><div class="row"><div class=" col-12 col-lg-12 offset-lg-0 col-sm-12 "><div class="row justify-content-start"> <time class="layout_post__time"> <i class="far fa-calendar-alt"></i> 九月 15, 2019 </time>
+</div></div></div></div>
+<div class="layout_post__tags"><div class="row"> <i class="fa fa-tags"></i> Tags:  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//Unity">Unity</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//%E5%B5%8C%E5%85%A5iOS">嵌入iOS</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//Swift%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">Swift应用程序</a>, </div></div>
+<div class="layout-post__reading_time"><div class="row"> 阅读“关于 11 分钟</div></div>
+<div class="layout_post__content"><div class="row d-block">
+<ul id="markdown-toc">
+<li><a href="#%E5%BC%95%E7%94%A8" id="markdown-toc-引用">引用：</a></li>
+<li><a href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" id="markdown-toc-注意事项">注意事项：</a></li>
+<li><a href="#%E6%95%99%E7%A8%8B" id="markdown-toc-教程">教程：</a></li>
+<li><a href="#gist-code" id="markdown-toc-gist-code">Gist code</a></li>
+</ul>
+<p>Hi! <img class="emoji" title=":hand:" alt=":hand:" src="https://github.githubassets.com/images/icons/emoji/unicode/270b.png" height="20" width="20"></p>
+<p>文章来源：<a href="https://medium.com/@IronEqual/how-to-embed-a-unity-game-into-an-ios-native-swift-app-772a0b65c82" target="_blank">How to embed a Unity game into an iOS native Swift App</a></p>
+<p>Hi！为了我们未来的B2B协议，我们必须必须把我们的游戏集成到IOS原生的Swift应用环境中去。为了使它高效而且没有错误，我们已经努力了很多天。 我们想通过这篇简单的教程来分享我们的只是和进展。</p>
+<h5 id="引用">引用：</h5>
+<p>本教程的灵感来自于其他人的工作： 将Unity5集成到使用Xcode开发的原生IOS应用中 https://the-nerd.be/2015/11/13/integrate-unity-5-in-a-native-ios-app-with-xcode-7</p>
+<p>jiulongw / swift-unity https://github.com/jiulongw/swift-unity</p>
+<p>keyv / iOSUnityVuforiaGuide https://github.com/keyv/iOSUnityVuforiaGuide</p>
+<p>jack_loverde / Unity 5 Vuforia 6和iOS原生集成 https://bitbucket.org/jack_loverde/unity-5-vuforia-6-and-ios-native-integration/src/master</p>
+<h5 id="注意事项">注意事项：</h5>
+<p>1、这篇教程深受Jiulong Wang的工作的启发，你可以点击链接查看他的教程和他出色的自动化脚本https://github.com/jiulongw/swift-unity 2、这篇教程使用Unity2017.4.0f1，但是它也适用于2018.2.2f1版本。但是必须把项目中“构建设置”的”不匹配返回类型”设置为”yes”。 3、注意Xcode不喜欢在路径和项目名称中使用空格，所以需要避免它。 4、注意嵌入Unity会在游戏中产生问题，尤其是图形方面的问题 5、当你修改了你的Unity项目并再一次把它导出时，请确定替换”Classes”，“Libraries”和”Data”文件夹，检查项目设置中的”Configurations”是否已被设置为”Untiy”。 6、当你在Xcode中遇到错误时，命令”Clean”(Product/Clean)Command+Shift+K和”Clean Build Folder”Command+Option+Shift+K能帮你在构建之前摆脱它。 7、当你编译时，如果在Xcode中遇到一个”Could not locate device support files” 错误，下载这个https://github.com/iGhibli/iOS-DeviceSupport 并且在”/Applications/Xcode.app/Contents/Developer/Platforns/iPhoneOS.platform/DeviceSupport”</p>
+<h5 id="教程">教程：</h5>
+<p>1、打开Xcode并且创建一个新的Swift工程或者打开一个已经存在的工程。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_1.png" title="Unity-Embed-Into-Ios_1.png" alt="Unity-Embed-Into-Ios_1.png">
+</div>
+<p>2、选择”Single View App”，然后点击”下一步”</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_2.png" title="Unity-Embed-Into-Ios_2.png" alt="Unity-Embed-Into-Ios_2.png">
+</div>
+<p>3、命名你的项目并设置语言为Swift</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_3.png" title="Unity-Embed-Into-Ios_3.png" alt="Unity-Embed-Into-Ios_3.png">
+</div>
+<p>4、保存你的工程到你想要保存的地方</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_4.png" title="Unity-Embed-Into-Ios_4.png" alt="Unity-Embed-Into-Ios_4.png">
+</div>
+<p>5、打开你的Unity工程并切换到iOS平台</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_5.png" title="Unity-Embed-Into-Ios_5.png" alt="Unity-Embed-Into-Ios_5.png">
+</div>
+<p>6、如果你还没有”Editor“文件夹，那就创建一个，并拷贝”XcodePostBuild.cs”脚本（在教程开始的地方你可以在”Extra“文件夹里找到）。这个脚本是Jiulong Wang提供的。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_6.png" title="Unity-Embed-Into-Ios_6.png" alt="Unity-Embed-Into-Ios_6.png">
+</div>
+<p>7、打开脚本并且替换”XcodePrijectRoot”为你刚刚创建的的Xcode工程路径。路径必须是到包含”.xcodeproj”文件的那层文件夹。然后显然替换”XcodeProjectName”为你的Xcode项目名称。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_7.png" title="Unity-Embed-Into-Ios_7.png" alt="Unity-Embed-Into-Ios_7.png">
+</div>
+<p>8、编译你的游戏并保存在你所创建的Xcode工程相同的文件件下。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_8.png" title="Unity-Embed-Into-Ios_8.png" alt="Unity-Embed-Into-Ios_8.png">
+</div>
+<p>9、打开你的Xcode工程，查看”General”选项卡是不是选中了有效的”Team”，并且验证你的”Bundle Identifer”是不是OK</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_9.png" title="Unity-Embed-Into-Ios_9.png" alt="Unity-Embed-Into-Ios_9.png">
+</div>
+<p>10、下载教程开始时提供的”Extra“文件夹，从它里面拷贝”Unity”文件夹到Xcode工程目录文件夹。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_10.png" title="Unity-Embed-Into-Ios_10.png" alt="Unity-Embed-Into-Ios_10.png">
+</div>
+<p>11、现在拖拽文件夹到Xcode树状结构上，并在弹出的窗口选择”Copy items if needed”和”Create groups”。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_11.png" title="Unity-Embed-Into-Ios_11.png" alt="Unity-Embed-Into-Ios_11.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_12.png" title="Unity-Embed-Into-Ios_12.png" alt="Unity-Embed-Into-Ios_12.png">
+</div>
+<p>12、从Unity导出文件夹中拷贝并粘贴”Classes”、”Libraries“和”Data”文件夹到Xcode项目中之前创建的Unity文件夹中</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_13.png" title="Unity-Embed-Into-Ios_13.png" alt="Unity-Embed-Into-Ios_13.png">
+</div>
+<p>13、现在拖拽”Classes“和”Libraries“文件夹到Xcode树状结构上，并在弹出的窗口选择”Copy items if needed”和”Create groups”。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_14.png" title="Unity-Embed-Into-Ios_14.png" alt="Unity-Embed-Into-Ios_14.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_15.png" title="Unity-Embed-Into-Ios_15.png" alt="Unity-Embed-Into-Ios_15.png">
+</div>
+<p>14、然后，拖拽”Data“文件夹到Xcode树状结构上，但只选择”Create folder references”选项。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_16.png" title="Unity-Embed-Into-Ios_16.png" alt="Unity-Embed-Into-Ios_16.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_17.png" title="Unity-Embed-Into-Ios_17.png" alt="Unity-Embed-Into-Ios_17.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_18.png" title="Unity-Embed-Into-Ios_18.png" alt="Unity-Embed-Into-Ios_18.png">
+</div>
+<p>15、在项目的”General”（现在在Info）标签页设置”Unity”配置</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_19.png" title="Unity-Embed-Into-Ios_19.png" alt="Unity-Embed-Into-Ios_19.png">
+</div>
+<p>16、现在你可以使用”Extra“文件夹提供的文件完全替换”AppDelegate.swift”，”Main.storyboard”和”ViewController.swift”文件或者你可以使用你自己的文件合并到这些文件中。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_20.png" title="Unity-Embed-Into-Ios_20.png" alt="Unity-Embed-Into-Ios_20.png">
+</div>
+<p>17、如果你要替换他们，在Xcode中选中”AppDelegate.swift”，”Main.storyboard”和”ViewController.swift”并把它们移到垃圾回收箱来删除它们。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_21.png" title="Unity-Embed-Into-Ios_21.png" alt="Unity-Embed-Into-Ios_21.png">
+</div>
+<p>18、然后，拖拽extra文件夹提供的三个文件到Xcode工程树上，并选择选项”Copy items if needed”和”Create groups”。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_22.png" title="Unity-Embed-Into-Ios_22.png" alt="Unity-Embed-Into-Ios_22.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_23.png" title="Unity-Embed-Into-Ios_23.png" alt="Unity-Embed-Into-Ios_23.png">
+</div>
+<p>19、如果Xcode询问你是否配置一个bridging header，选择”不创建”。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_24.png" title="Unity-Embed-Into-Ios_24.png" alt="Unity-Embed-Into-Ios_24.png">
+</div>
+<p>那两个脚本也是Jiulong wang提供的。 AppDelegate.swift</p>
+<figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span></span><span class="lineno"> 1 </span><span class="n">import</span> <span class="n">UIKit</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="n">@UIApplicationMain</span>
+<span class="lineno"> 4 </span><span class="k">class</span> <span class="nc">AppDelegate</span><span class="p">:</span> <span class="n">UIResponder</span><span class="p">,</span> <span class="n">UIApplicationDelegate</span> <span class="p">{</span>
+<span class="lineno"> 5 </span>    
+<span class="lineno"> 6 </span>    <span class="kt">var</span> <span class="n">window</span><span class="p">:</span> <span class="n">UIWindow</span><span class="p">?</span>
+<span class="lineno"> 7 </span>    
+<span class="lineno"> 8 </span>    <span class="kt">var</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">?</span>
+<span class="lineno"> 9 </span>    
+<span class="lineno">10 </span>    <span class="n">@objc</span> <span class="kt">var</span> <span class="n">currentUnityController</span><span class="p">:</span> <span class="n">UnityAppController</span><span class="p">!</span>
+<span class="lineno">11 </span>    
+<span class="lineno">12 </span>    <span class="kt">var</span> <span class="n">isUnityRunning</span> <span class="p">=</span> <span class="k">false</span>
+<span class="lineno">13 </span>    
+<span class="lineno">14 </span>    <span class="n">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="n">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="n">UIApplicationLaunchOptionsKey</span><span class="p">:</span> <span class="n">Any</span><span class="p">]?)</span> <span class="p">-&gt;</span> <span class="n">Bool</span> <span class="p">{</span>
+<span class="lineno">15 </span>        <span class="c1">// Override point for customization after application launch.</span>
+<span class="lineno">16 </span>        
+<span class="lineno">17 </span>        <span class="n">self</span><span class="p">.</span><span class="n">application</span> <span class="p">=</span> <span class="n">application</span>
+<span class="lineno">18 </span>        <span class="n">unity_init</span><span class="p">(</span><span class="n">CommandLine</span><span class="p">.</span><span class="n">argc</span><span class="p">,</span> <span class="n">CommandLine</span><span class="p">.</span><span class="n">unsafeArgv</span><span class="p">)</span>
+<span class="lineno">19 </span>        
+<span class="lineno">20 </span>        <span class="n">currentUnityController</span> <span class="p">=</span> <span class="n">UnityAppController</span><span class="p">()</span>
+<span class="lineno">21 </span>        <span class="n">currentUnityController</span><span class="p">.</span><span class="n">application</span><span class="p">(</span><span class="n">application</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span><span class="p">:</span> <span class="n">launchOptions</span><span class="p">)</span>
+<span class="lineno">22 </span>        
+<span class="lineno">23 </span>        <span class="c1">// first call to startUnity will do some init stuff, so just call it here and directly stop it again</span>
+<span class="lineno">24 </span>        <span class="cm">/*startUnity()</span>
+<span class="lineno">25 </span><span class="cm">        stopUnity()*/</span>
+<span class="lineno">26 </span>        
+<span class="lineno">27 </span>        <span class="k">return</span> <span class="k">true</span>
+<span class="lineno">28 </span>    <span class="p">}</span>
+<span class="lineno">29 </span>    
+<span class="lineno">30 </span>    <span class="n">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">31 </span>        <span class="c1">// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.</span>
+<span class="lineno">32 </span>        <span class="c1">// Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.</span>
+<span class="lineno">33 </span>        
+<span class="lineno">34 </span>        <span class="k">if</span> <span class="n">isUnityRunning</span> <span class="p">{</span>
+<span class="lineno">35 </span>            <span class="n">currentUnityController</span><span class="p">.</span><span class="n">applicationWillResignActive</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="lineno">36 </span>        <span class="p">}</span>
+<span class="lineno">37 </span>    <span class="p">}</span>
+<span class="lineno">38 </span>    
+<span class="lineno">39 </span>    <span class="n">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">40 </span>        <span class="c1">// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.</span>
+<span class="lineno">41 </span>        <span class="c1">// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.</span>
+<span class="lineno">42 </span>        
+<span class="lineno">43 </span>        <span class="k">if</span> <span class="n">isUnityRunning</span> <span class="p">{</span>
+<span class="lineno">44 </span>            <span class="n">currentUnityController</span><span class="p">.</span><span class="n">applicationDidEnterBackground</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="lineno">45 </span>        <span class="p">}</span>
+<span class="lineno">46 </span>    <span class="p">}</span>
+<span class="lineno">47 </span>    
+<span class="lineno">48 </span>    <span class="n">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">49 </span>        <span class="c1">// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.</span>
+<span class="lineno">50 </span>        
+<span class="lineno">51 </span>        <span class="k">if</span> <span class="n">isUnityRunning</span> <span class="p">{</span>
+<span class="lineno">52 </span>            <span class="n">currentUnityController</span><span class="p">.</span><span class="n">applicationWillEnterForeground</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="lineno">53 </span>        <span class="p">}</span>
+<span class="lineno">54 </span>    <span class="p">}</span>
+<span class="lineno">55 </span>    
+<span class="lineno">56 </span>    <span class="n">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">57 </span>        <span class="c1">// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.</span>
+<span class="lineno">58 </span>        
+<span class="lineno">59 </span>        <span class="k">if</span> <span class="n">isUnityRunning</span> <span class="p">{</span>
+<span class="lineno">60 </span>            <span class="n">currentUnityController</span><span class="p">.</span><span class="n">applicationDidBecomeActive</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="lineno">61 </span>        <span class="p">}</span>
+<span class="lineno">62 </span>    <span class="p">}</span>
+<span class="lineno">63 </span>    
+<span class="lineno">64 </span>    <span class="n">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="n">application</span><span class="p">:</span> <span class="n">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">65 </span>        <span class="c1">// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.</span>
+<span class="lineno">66 </span>    <span class="p">}</span>
+<span class="lineno">67 </span>    
+<span class="lineno">68 </span>    <span class="n">func</span> <span class="nf">startUnity</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">69 </span>        <span class="k">if</span> <span class="p">!</span><span class="n">isUnityRunning</span>
+<span class="lineno">70 </span>        <span class="p">{</span>
+<span class="lineno">71 </span>            <span class="n">isUnityRunning</span> <span class="p">=</span> <span class="k">true</span>
+<span class="lineno">72 </span>            <span class="n">currentUnityController</span><span class="p">.</span><span class="n">applicationDidBecomeActive</span><span class="p">(</span><span class="n">application</span><span class="p">!)</span>
+<span class="lineno">73 </span>        <span class="p">}</span>
+<span class="lineno">74 </span>    <span class="p">}</span>
+<span class="lineno">75 </span>    
+<span class="lineno">76 </span>    <span class="n">func</span> <span class="nf">stopUnity</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">77 </span>        <span class="k">if</span> <span class="n">isUnityRunning</span> <span class="p">{</span>
+<span class="lineno">78 </span>            <span class="n">currentUnityController</span><span class="p">.</span><span class="n">applicationWillResignActive</span><span class="p">(</span><span class="n">application</span><span class="p">!)</span>
+<span class="lineno">79 </span>            <span class="n">isUnityRunning</span> <span class="p">=</span> <span class="k">false</span>
+<span class="lineno">80 </span>        <span class="p">}</span>
+<span class="lineno">81 </span>    <span class="p">}</span>
+<span class="lineno">82 </span><span class="p">}</span></code></pre></figure><p>ViewController.swift</p>
+<figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span></span><span class="lineno"> 1 </span><span class="n">import</span> <span class="n">UIKit</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="k">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="n">UIViewController</span>
+<span class="lineno"> 4 </span><span class="p">{</span>
+<span class="lineno"> 5 </span>    <span class="n">@IBOutlet</span> <span class="kt">var</span> <span class="n">rotateSwitch</span><span class="p">:</span> <span class="n">UISwitch</span><span class="p">!</span>
+<span class="lineno"> 6 </span>    
+<span class="lineno"> 7 </span>    <span class="k">override</span> <span class="n">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span>
+<span class="lineno"> 8 </span>    <span class="p">{</span>
+<span class="lineno"> 9 </span>        <span class="n">super</span><span class="p">.</span><span class="n">viewDidLoad</span><span class="p">()</span>
+<span class="lineno">10 </span>        
+<span class="lineno">11 </span>       <span class="cm">/* if let appDelegate = UIApplication.shared.delegate as? AppDelegate</span>
+<span class="lineno">12 </span><span class="cm">        {</span>
+<span class="lineno">13 </span><span class="cm">            appDelegate.startUnity()</span>
+<span class="lineno">14 </span><span class="cm">            </span>
+<span class="lineno">15 </span><span class="cm">            NotificationCenter.default.addObserver(self, selector: #selector(handleUnityReady), name: NSNotification.Name("UnityReady"), object: nil)</span>
+<span class="lineno">16 </span><span class="cm">        }*/</span>
+<span class="lineno">17 </span>    <span class="p">}</span>
+<span class="lineno">18 </span>    
+<span class="lineno">19 </span>    <span class="n">@objc</span> <span class="n">func</span> <span class="nf">handleUnityReady</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">20 </span>        <span class="n">showUnitySubView</span><span class="p">()</span>
+<span class="lineno">21 </span>    <span class="p">}</span>
+<span class="lineno">22 </span>    
+<span class="lineno">23 </span>    <span class="n">func</span> <span class="nf">showUnitySubView</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">24 </span>        <span class="k">if</span> <span class="k">let</span> <span class="n">unityView</span> <span class="p">=</span> <span class="n">UnityGetGLView</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">25 </span>            <span class="c1">// insert subview at index 0 ensures unity view is behind current UI view</span>
+<span class="lineno">26 </span>            <span class="n">view</span><span class="p">?.</span><span class="n">insertSubview</span><span class="p">(</span><span class="n">unityView</span><span class="p">,</span> <span class="n">at</span><span class="p">:</span> <span class="m">0</span><span class="p">)</span>
+<span class="lineno">27 </span>            
+<span class="lineno">28 </span>           <span class="cm">/* unityView.translatesAutoresizingMaskIntoConstraints = false</span>
+<span class="lineno">29 </span><span class="cm">            let views = ["view": unityView]</span>
+<span class="lineno">30 </span><span class="cm">            let w = NSLayoutConstraint.constraints(withVisualFormat: "|-0-[view]-0-|", options: [], metrics: nil, views: views)</span>
+<span class="lineno">31 </span><span class="cm">            let h = NSLayoutConstraint.constraints(withVisualFormat: "V:|-75-[view]-0-|", options: [], metrics: nil, views: views)</span>
+<span class="lineno">32 </span><span class="cm">            view.addConstraints(w + h)*/</span>
+<span class="lineno">33 </span>        <span class="p">}</span>
+<span class="lineno">34 </span>    <span class="p">}</span>
+<span class="lineno">35 </span>    
+<span class="lineno">36 </span>    <span class="n">@IBAction</span> <span class="n">func</span> <span class="nf">startUnity</span><span class="p">(</span><span class="n">_</span> <span class="n">sender</span><span class="p">:</span> <span class="n">UIButton</span><span class="p">)</span>
+<span class="lineno">37 </span>    <span class="p">{</span>
+<span class="lineno">38 </span>        <span class="k">if</span> <span class="k">let</span> <span class="n">unityView</span> <span class="p">=</span> <span class="n">UnityGetGLView</span><span class="p">()</span>
+<span class="lineno">39 </span>        <span class="p">{</span>
+<span class="lineno">40 </span>            <span class="n">unityView</span><span class="p">.</span><span class="n">isHidden</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="lineno">41 </span>        <span class="p">}</span>
+<span class="lineno">42 </span>        
+<span class="lineno">43 </span>        <span class="k">if</span> <span class="k">let</span> <span class="n">appDelegate</span> <span class="p">=</span> <span class="n">UIApplication</span><span class="p">.</span><span class="n">shared</span><span class="p">.</span><span class="k">delegate</span> <span class="k">as</span><span class="p">?</span> <span class="n">AppDelegate</span>
+<span class="lineno">44 </span>        <span class="p">{</span>
+<span class="lineno">45 </span>            <span class="n">appDelegate</span><span class="p">.</span><span class="n">startUnity</span><span class="p">()</span>
+<span class="lineno">46 </span>           <span class="n">NotificationCenter</span><span class="p">.</span><span class="k">default</span><span class="p">.</span><span class="n">addObserver</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">:</span> <span class="err">#</span><span class="n">selector</span><span class="p">(</span><span class="n">handleUnityReady</span><span class="p">),</span> <span class="n">name</span><span class="p">:</span> <span class="n">NSNotification</span><span class="p">.</span><span class="n">Name</span><span class="p">(</span><span class="s">"UnityReady"</span><span class="p">),</span> <span class="kt">object</span><span class="p">:</span> <span class="n">nil</span><span class="p">)</span>
+<span class="lineno">47 </span>        <span class="p">}</span>
+<span class="lineno">48 </span>    <span class="p">}</span>
+<span class="lineno">49 </span>    
+<span class="lineno">50 </span>    <span class="n">@IBAction</span> <span class="n">func</span> <span class="nf">stopUnity</span><span class="p">(</span><span class="n">_</span> <span class="n">sender</span><span class="p">:</span> <span class="n">UIButton</span><span class="p">)</span>
+<span class="lineno">51 </span>    <span class="p">{</span>
+<span class="lineno">52 </span>        <span class="k">if</span> <span class="k">let</span> <span class="n">appDelegate</span> <span class="p">=</span> <span class="n">UIApplication</span><span class="p">.</span><span class="n">shared</span><span class="p">.</span><span class="k">delegate</span> <span class="k">as</span><span class="p">?</span> <span class="n">AppDelegate</span>
+<span class="lineno">53 </span>        <span class="p">{</span>
+<span class="lineno">54 </span>            <span class="n">appDelegate</span><span class="p">.</span><span class="n">stopUnity</span><span class="p">()</span>
+<span class="lineno">55 </span>            
+<span class="lineno">56 </span>            <span class="k">if</span> <span class="k">let</span> <span class="n">unityView</span> <span class="p">=</span> <span class="n">UnityGetGLView</span><span class="p">()</span>
+<span class="lineno">57 </span>            <span class="p">{</span>
+<span class="lineno">58 </span>                <span class="n">unityView</span><span class="p">.</span><span class="n">isHidden</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="lineno">59 </span>            <span class="p">}</span>
+<span class="lineno">60 </span>        <span class="p">}</span>
+<span class="lineno">61 </span>    <span class="p">}</span>
+<span class="lineno">62 </span><span class="p">}</span></code></pre></figure><p>20、如果你不导入我们的”Main.storyboard”文件，你可以自己创建并链接按钮到”ViewController.swift“中对应的函数</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_25.png" title="Unity-Embed-Into-Ios_25.png" alt="Unity-Embed-Into-Ios_25.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_26.png" title="Unity-Embed-Into-Ios_26.png" alt="Unity-Embed-Into-Ios_26.png">
+</div>
+<p>21、一旦你做完了”Main.storyboard”和”ViewController.swift”，稍后检查是否链接到storyboard中的”Class“变量</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_27.png" title="Unity-Embed-Into-Ios_27.png" alt="Unity-Embed-Into-Ios_27.png">
+</div>
+<p>22、为了避免”LaunchScreen,storyboard“文件的一些错误，删除他，并在项目的”General”标签页设置”Main.storyboard“为”场景启动文件”</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_28.png" title="Unity-Embed-Into-Ios_28.png" alt="Unity-Embed-Into-Ios_28.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_29.png" title="Unity-Embed-Into-Ios_29.png" alt="Unity-Embed-Into-Ios_29.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_30.png" title="Unity-Embed-Into-Ios_30.png" alt="Unity-Embed-Into-Ios_30.png">
+</div>
+<p>23、现在所有的都要建立起来了，你应该能选择你的IOS设备并且在上面编译你的Xcode工程。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_31.png" title="Unity-Embed-Into-Ios_31.png" alt="Unity-Embed-Into-Ios_31.png">
+</div>
+<p>24、一旦你的应用启动起来，按下”Start Unity”按钮启动你的游戏，按下”Pause Unity”暂停并隐藏它。你可以按下”Start Unity”再一次恢复它。</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_32.png" title="Unity-Embed-Into-Ios_32.png" alt="Unity-Embed-Into-Ios_32.png">
+</div>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-Embed-Into-Ios_33.png" title="Unity-Embed-Into-Ios_33.png" alt="Unity-Embed-Into-Ios_33.png">
+</div>
+<h2 id="gist-code">Gist code</h2>
+<script src="https://gist.github.com/a3672f19f0f2ac35810b.js"> </script><p><br></p>
+<p>To use, see:<a href="https://jektify.github.io" target="_blank">Jektify - Doc</a></p>
+<dl class="jektify jektify--dark jektify--custom">
+<dt class="jektify__header jektify__header--dark jektify__header--custom"> <a class="jektify__brand jektify__brand--dark jektify__brand--custom" href="https://jektify.github.io" target="_blank">jektify</a> <i class="jektify__year jektify__year--dark jektify__year--custom">© 2019 </i> <span class="jektify__button jektify__button--dark jektify__button--custom jektify__button--open">+</span>
+</dt>
+<dd class="jektify__body jektify__body--dark jektify__body--custom" style="display: block">
+<h1 class="jektify__title jektify__title--dark jektify__user--dark jektify__title--custom" style="display: none;">Música</h1>
+<p class="jektify__description jektify__description--dark jektify__description--custom" style="display: none;">Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these musics.</p>
+<div class="jektify__tracklist jektify__tracklist--dark jektify__tracklist--custom"> <iframe id="jektify__track" class="jektify__track jektify__track--dark jektify__track--custom" src="https://embed.spotify.com/?uri=spotify:track:62qsgMnY4wg8nE5qjyOdWO&amp;theme=dark" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+</div>
+</dd>
+</dl>
+<p>Goodbye! <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+<hr style="border-top: 1px solid #9D9D9D ; color: #9D9D9D ;" class="endpost">
+</div></div>
+<div class="layout_post__dayquote">
+<div class="row"><h2 class="layout_post__dayquote-title">The word of the day!</h2></div>
+<div class="row"><p class="layout_post__dayquote-description">Put a very powerful message.</p></div>
+</div>
+<div class="layout_post__share">
+<div class="row justify-content-center"><h2>分享</h2></div>
+<div class="row justify-content-center">
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-fb" href="#" title="" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Facebook</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-ln" href="http://www.linkedin.com/cws/share?url=https://flyingeye.cn/blog/%E5%A6%82%E4%BD%95%E5%B0%86Unity%E6%B8%B8%E6%88%8F%E5%B5%8C%E5%85%A5iOS%E5%8E%9F%E7%94%9F%E7%9A%84Swift%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" onclick='window.open(this.href,"popupwindow","status=0,height=500,width=700,resizable=0,top=50,left=100");return false;' target="_blank" title="">Linkedin</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-tw" href="https://twitter.com/intent/tweet?text=https://flyingeye.cn/blog/%E5%A6%82%E4%BD%95%E5%B0%86Unity%E6%B8%B8%E6%88%8F%E5%B5%8C%E5%85%A5iOS%E5%8E%9F%E7%94%9F%E7%9A%84Swift%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/%20-%20%E5%A6%82%E4%BD%95%E5%B0%86Unity%E6%B8%B8%E6%88%8F%E5%B5%8C%E5%85%A5iOS%E5%8E%9F%E7%94%9F%E7%9A%84Swift%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%20by%20" target="_blank" title="">Twitter</a>
+</div>
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+</div>
+</div>
+<div class="layout_post__author"><div class="row"><div class="col-12 p-0 col-lg-12 ">
+<p class="layout_post__author-title">作者</p>
+<h2 class="font-weight-bold layout_post__author-name">xiaofeng</h2>
+<p class="layout_post__author-description">Hi! I'm the xiaofeng. :)</p>
+</div></div></div>
+</div></div></div>
+</div></div>
+<div class="footer">
+<div class="container-fluid"><div class="row">
+<div class="col-12 col-md-4"> <span class="text-center footer__copyright">编程人生 © 2015-2019 • All right reserved.</span>
+</div>
+<div class="col-12 col-md-4 d-none d-md-block"> <span class="text-center footer__message">Simplicity is fashionable.</span>
+</div>
+<div class="col-12 col-md-4"> <span class="text-center footer__madeby">Made with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> using <a href="https://github.com/williamcanin/typing-jekyll-template" target="_blank">Typing</a> Theme.</span>
+</div>
+</div></div>
+<a class="footer__scrrolltop" href="#top"><i class="fas fa-caret-up"></i></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script type="text/javascript" src="https://flyingeye.cn/assets/js/post.js"></script> <script src="https://flyingeye.cn/assets/vendor/jektify/js/jektify.min.js"></script>
+</div></body></html>

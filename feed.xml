@@ -19,9 +19,67 @@
     <description>记录编程生活的点点滴滴，努力提升自己。</description>
     <link>https://flyingeye.cn/</link>
     <atom:link href="https://flyingeye.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Sep 2019 18:44:22 +0800</pubDate>
-    <lastBuildDate>Sun, 15 Sep 2019 18:44:22 +0800</lastBuildDate>
+    <pubDate>Tue, 01 Oct 2019 19:26:02 +0800</pubDate>
+    <lastBuildDate>Tue, 01 Oct 2019 19:26:02 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>ARTS挑战第六周</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#arts挑战第六周&quot; id=&quot;markdown-toc-arts挑战第六周&quot;&gt;ARTS挑战第六周&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;h2 id=&quot;arts挑战第六周&quot;&gt;ARTS挑战第六周&lt;/h2&gt; &lt;p&gt;Algorithm: &lt;a href=&quot;http://flyingeye.cn/blog/LeetCode算法题解-Palindrome-Number/&quot; target=&quot;_blank&quot;&gt;LeetCode算法题解-Palindrome-Number&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Review: &lt;a href=&quot;http://flyingeye.cn/blog/什么是ECS/&quot; target=&quot;_blank&quot;&gt;什么是ECS&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Tip: 暂无&lt;/p&gt; &lt;p&gt;Share: &lt;a href=&quot;http://flyingeye.cn/blog/听书笔记-数据结构与算法之美(5)/&quot; target=&quot;_blank&quot;&gt;听书笔记-数据结构与算法之美(5)&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full...</description>
+        <pubDate>Sun, 29 Sep 2019 09:02:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E5%85%AD%E5%91%A8/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/ARTS%E6%8C%91%E6%88%98%E7%AC%AC%E5%85%AD%E5%91%A8/</guid>
+        
+        <tag>ARTS</tag>
+        
+        <tag>ARTS挑战</tag>
+        
+        <tag>挑战</tag>
+        
+      </item>
+    
+      <item>
+        <title>问Unity专家：什么是ECS?</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;文章来源：&lt;a href=&quot;https://medium.com/improbable-engineering/ask-the-unity-expert-what-is-the-ecs-37616ae375ef&quot; target=&quot;_blank&quot;&gt;Ask the Unity expert: what is the ECS?&lt;/a&gt;&lt;/p&gt; &lt;p&gt;在这里，这是关于这个主题一系列文章的第一篇，我们将解释Unity的ECS是什么以及它能为你的游戏做些什么。&lt;/p&gt; &lt;p&gt;Unity的ESC的主要好处是默认性能。为了实现这一点，ECS从传统的面向对象编程(即大多数unity开发者所熟悉的以GameObject和MonoBehaviour为中心的工作流)转向面向数据编程。为了说明他们的不同，让我们比较一下你如何用每种方法构建一个代表玩家角色的对象:&lt;/p&gt; &lt;div class=&quot;row imager&quot; style=&quot;margin: 40px 0px;&quot;&gt; &lt;img class=&quot;img-fluid mx-auto d-block&quot; src=&quot;/assets/images/posts/Unity-ECS_1.png&quot; title=&quot;Unity-ECS_1.png&quot; alt=&quot;Unity-ECS_1.png&quot; /&gt; &lt;/div&gt; &lt;p&gt;使用面向对象编程，你要创建GameObject来代表玩家角色，然后添加MonoBehaviours来赋予GameObject功能，例如玩家控制器、健康状况和物理属性。这些MonoBehaviours包含数据（例如生命值）和修改数据的代码（例如当玩家受到伤害时生命值减少）&lt;/p&gt; &lt;div class=&quot;row imager&quot; style=&quot;margin: 40px 0px;&quot;&gt; &lt;img class=&quot;img-fluid mx-auto d-block&quot; src=&quot;/assets/images/posts/Unity-ECS_2.png&quot; title=&quot;Unity-ECS_2.png&quot; alt=&quot;Unity-ECS_2.png&quot; /&gt; &lt;/div&gt; &lt;p&gt;使用面向数据的设计，你要创建一个实体来代表玩家角色，然后附加组件来存储数据。ECS组件不应该与GameObject组件混淆，比如MonoBehaviours。不像GameObject组件，ECS组件不会包含任何的逻辑，它们只是存储数据。我们用来在实体和它们的组件上执行操作的代码以sysytems的形式存在。Systems即脚本。它们大多数操作世界上所有的实体和组件。&lt;/p&gt; &lt;p&gt;为了继续前面生命值递减的例子，一个system对所有的具有健康和伤害组件的实体进行分组并对相应的受影响的组件递减生命值。&lt;/p&gt; &lt;p&gt;##ECS的好处是什么？ 面向数据设置的内存布局确保由ECS生成的diamante再内存地址之间执行的跳转比传统的面向对象编程要少的多。&lt;/p&gt; &lt;p&gt;此外，ECS的内存布局允许利用缓存预取进行进一步的代码优化。你的CPU使用的这个进程确保在需要的时候它已经把下一比特的数据加载到缓存中了。Unity ECS通过使用同样大小的组件块来实现这一点。这些组件块是可以线性迭代的。CPU不需要处理各种大小的随机存储的对象，只需要处理这些线性存储在相同内存区域的大小相同的块。这样使CPU的工作更容易，有点像玩1*1的俄罗斯方块。 通过解耦数据（实体和组件）和逻辑（系统）,ECS还生成了更加模块化、更易于阅读的代码。作为一名致力于不太可能的面向Unity的SpatialOS Game Development Kit (GDK， 它建立在Unity的ECS上）的开发者，我对这一点尤其感兴趣。ECS概念上反映了SpatialOs（实体、组件和操作他们的工作人员），因此非常适合SoatialOS GDK。&lt;/p&gt; &lt;p&gt;为什么不是每个人都使用ECS？ 有了这么多好处，你可能有疑问？为什么不是每个人都使用ECS?首先，ECS并不适合所有人。在不太可能的情况下，我们对此感到兴奋，因为它支持Spatial OS 所支持的大量的、多人的且持久的游戏，但是有些游戏（比如回合制策略游戏）并不需要这种性能。 其次，ECS仍然处于开发的试验阶段。Unity先用的工具和系统仍然只设计用于FGameObjects和MonoBehaviours。&lt;/p&gt; &lt;p&gt;##SpatialOS的ECS和MonoBehaviour工作流 为了缓解这些痛点，SpatialOS GDK for Unity提供了两个工作流选项：&lt;/p&gt; &lt;p&gt;1、以MonoBehaviour为中心的工作流，这个工作在Unity所有的已开发的MonoVehaviour工具、工作流和APIs。&lt;/p&gt; &lt;p&gt;2、ECS工作流，这个利用了ECS开发范式和相关的性能改进。&lt;/p&gt; &lt;p&gt;至关重要的是，这些工作流并不相互排斥。鉴于目前缺乏围绕ECS的工具，我们预计你将使用MonoBehaviours来编写大部分或者全部的游戏。无论你选择哪个工作流，你的游戏都将能利用我们使用使用ECS编写的GDK核心模块。我们的目标是通过我们的自己的API和抽象层尽早的给你带来ECS的好处。这种方法使你免受Unity对他们的ECS所做的大部分破坏性改变，所以你可以专注于编写你想要的游戏。 在下一篇文章中我们将详细研究这两种工作流，并检查每种工作流的代码示例。在那之前，这里有更多的关于Unity ECS和SpatialOS GDK for Unity的资源。&lt;/p&gt; &lt;p&gt;###ECS资源列表&lt;/p&gt; &lt;p&gt;Unity’s ECS samples repository&lt;/p&gt; &lt;p&gt;Video playlist: Intro To The Entity Component System&lt;/p&gt; &lt;p&gt;Voxelman, an ECS tech...</description>
+        <pubDate>Sun, 29 Sep 2019 07:53:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E4%BB%80%E4%B9%88%E6%98%AFECS/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E4%BB%80%E4%B9%88%E6%98%AFECS/</guid>
+        
+        <tag>Unity</tag>
+        
+        <tag>ECS</tag>
+        
+      </item>
+    
+      <item>
+        <title>LeetCode算法题解-第九道题</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand:&lt;/p&gt; &lt;p&gt;LeetCode 第九道题: Palindrome Number，难度简单。&lt;/p&gt; &lt;p&gt;Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121 Output: true&lt;/p&gt; &lt;p&gt;Example 2: Input: -121 Output: false Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.&lt;/p&gt; &lt;p&gt;Example 3: Input: 10 Output: false Explanation: Reads 01 from right to left. Therefore it is not a palindrome.&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;lineno&quot;&gt; 1 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span...</description>
+        <pubDate>Sun, 29 Sep 2019 07:51:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Palindrome-Number/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/LeetCode%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3-Palindrome-Number/</guid>
+        
+        <tag>LeetCode</tag>
+        
+        <tag>算法</tag>
+        
+      </item>
+    
+      <item>
+        <title>听书笔记：数据结构与算法之美(5)</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt; &lt;li&gt;&lt;a href=&quot;#gist-code&quot; id=&quot;markdown-toc-gist-code&quot;&gt;Gist code&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Hi! :hand: 1、缓存淘汰策略 常见的三中策略： 先进先出策略（FIFO） 最小使用策略（LFU） 最近最少使用策略（LRU）&lt;/p&gt; &lt;p&gt;2、链表 单链表&lt;/p&gt; &lt;p&gt;记录下一个结点地址的指针叫作后继指针next 头结点记录了链表的基地址 尾结点指向的不是下一个结点，而是指向一个空地址NULL。&lt;/p&gt; &lt;p&gt;链表的插入和删除操作是非常高效的，不需要搬移数据，时间复杂度是O(1)（仅仅说的是这个操作）。 链表随机访问第K个结点就没有数组高效，时间复杂度是O(n)。&lt;/p&gt; &lt;p&gt;循环链表 是一种特殊的单链表，与单链表的区别是单链表尾指针指向空结点NULL，循环链表的尾结点指针指向链表的头结点。 循环链表从链尾到链头比较方便。当处理的数据具有环型结构失特别适合采用循环链表。&lt;/p&gt; &lt;p&gt;双向链表 更加常用的链表。 每个结点不止有一个后继指针next指向后面的结点，还有一个前驱指针prev指向前面的结点。 需要额外的空间来存储后继结点和前驱结点的地址，但可以支持双向遍历。&lt;/p&gt; &lt;p&gt;优势： 插入和删除操作比链表更高效。 对于一个有序列表，双向列表按值查询效率也比单链表高一些。因为我们可以记录上次查找的位置P，每次查询时根据查找的大小决定往前还是往后，所以平均只需要查找一半的数据。&lt;/p&gt; &lt;p&gt;Java中，LinkedHashMap的实现原理就用到了双向链表的结构。&lt;/p&gt; &lt;p&gt;空间换时间思想 对于执行较慢的程序，可以通过消耗更多的内存（空间换时间）来进行优化，而消耗过多内存的程序，可以通过消耗更多的时间（时间换空间）来减低内存的消耗。&lt;/p&gt; &lt;p&gt;双向循环链表&lt;/p&gt; &lt;p&gt;链表数组性能比较 数组和链表的对比不能局限于时间复杂度。 数据简单易用，在实现上使用的是连续的内存空间，可以借助CPU的缓存机制，预读数组中的数据，所以访问效率更高。链表在内存中不连续，所以对CPU并不友好，没办法有效预读。&lt;/p&gt; &lt;p&gt;数组的缺点就是大小固定，一经声明就要占用整块连续的内存空间。如果声明的数组过大，系统可能会没有足够连续的内存空间分配给它，导致内存不足。声明数组过小则可能出现不够用的情况。链表本身没有大小限制，天然的支持动态扩容，这是和数组最大的区别。&lt;/p&gt; &lt;p&gt;链表每个结点都需要消耗额外的存储空间去存储一份指向下一个结点的指针，内存消耗会加倍。 对链表频繁的插入、删除操作，还会导致频繁的内存申请和释放，容易造成内存碎片。&lt;/p&gt; &lt;h2 id=&quot;gist-code&quot;&gt;Gist code&lt;/h2&gt; &lt;script src=&quot;https://gist.github.com/a3672f19f0f2ac35810b.js&quot;&gt; &lt;/script&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;To use, see:&lt;a href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;Jektify - Doc&lt;/a&gt;&lt;/p&gt; &lt;dl class=&quot;jektify jektify--dark jektify--custom&quot;&gt; &lt;dt class=&quot;jektify__header jektify__header--dark jektify__header--custom&quot;&gt; &lt;a class=&quot;jektify__brand jektify__brand--dark jektify__brand--custom&quot; href=&quot;https://jektify.github.io&quot; target=&quot;_blank&quot;&gt;jektify&lt;/a&gt; &lt;i class=&quot;jektify__year jektify__year--dark jektify__year--custom&quot;&gt;&amp;copy;&amp;nbsp;2019&amp;nbsp;&lt;/i&gt; &lt;span class=&quot;jektify__button jektify__button--dark jektify__button--custom jektify__button--open&quot;&gt;+&lt;/span&gt; &lt;/dt&gt; &lt;dd class=&quot;jektify__body jektify__body--dark jektify__body--custom&quot; style=&quot;display: block&quot;&gt; &lt;h1 class=&quot;jektify__title jektify__title--dark jektify__user--dark jektify__title--custom&quot; style=&quot;display: none;&quot;&gt;Música&lt;/h1&gt; &lt;p class=&quot;jektify__description jektify__description--dark jektify__description--custom&quot; style=&quot;display: none;&quot;&gt;Jekyll plugin...</description>
+        <pubDate>Sun, 29 Sep 2019 07:16:16 +0800</pubDate>
+        <link>https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(5)/</link>
+        <guid isPermaLink="true">https://flyingeye.cn/blog/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E(5)/</guid>
+        
+        <tag>数据结构</tag>
+        
+        <tag>数据结构与算法</tag>
+        
+        <tag>算法</tag>
+        
+        <tag>链表</tag>
+        
+      </item>
     
       <item>
         <title>ARTS挑战第五周</title>

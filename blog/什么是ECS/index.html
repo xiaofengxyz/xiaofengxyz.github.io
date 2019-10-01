@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title> 问Unity专家：什么是ECS? | 编程人生 - 记录编程生活的点点滴滴，努力提升自己。</title><meta name=description content=""><meta http-equiv="cache-control" content="max-age=29030400"/><meta http-equiv="pragma" content="public"><meta name="keywords" content="编程, 程序, 自我提升" /><meta name="author" content="xiaofeng" /><meta http-equiv="Content-Language" content="zh"><meta property="og:locale" content="zh" /><meta property="og:site_name" content="编程人生" /><meta property="og:type" content="WebSite" /><meta property="og:url" content="https://flyingeye.cn/blog/%E4%BB%80%E4%B9%88%E6%98%AFECS/" /><meta property="og:description" content="记录编程生活的点点滴滴，努力提升自己。" /><meta property="og:title" content="问Unity专家：什么是ECS?" /><link rel="canonical" href="https://flyingeye.cn/blog/%E4%BB%80%E4%B9%88%E6%98%AFECS/"><link rel="alternate" type="application/rss+xml" title="编程人生" href="https://flyingeye.cn/feed.xml"><link rel="icon" type="image/png" sizes="32x32" href="https://flyingeye.cn/assets/images/favicon/favicon-32x32.ico"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Space+Mono:400,400i,700,700i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script><link rel="stylesheet" href="/assets/css/vendor.css"><link rel="stylesheet" href="/assets/css/hacking.css"></head><body id="top"><div class="layout_default layout_default__bg">
+<div class="container layout_default__container"><div class="row">
+<div class="p-0 col-lg-3 sidebar sidebar__bg"><div class="container-fluid">
+<div class="sidebar__header"><div class="mt-4 row">
+<div class="mb-0 mb-lg-4 col-3 col-sm-3 col-lg-12"> <a class="sidebar__img sidebar__img-noflip" href="https://flyingeye.cn/"> <img class="img-fluid mx-auto d-block border-dashed" src="/assets/images/avatar/WechatIMG9.jpeg" width="165" height="165" alt="Avatar"> </a>
+</div>
+<div class=" col-9 col-sm-9 col-lg-12"> <a class="text-d-none sidebar__title" href="https://flyingeye.cn/"><h1 class="sidebar__title--text">乐生</h1></a>
+</div>
+</div></div>
+<div class="mt-4 sidebar__menu"><div class="row"><ul class="px-3 mx-2 px-lg-3 mx-lg-3 sidebar__menu-list">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-home"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/">首页</a>
+</li>
+<hr class="hr-dashed">
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-edit"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/">博客</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-search"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/search/">搜索</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-tags"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/blog/tags/">标签</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-envelope"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/contact/">联系</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-briefcase"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/projects/">项目</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-file-alt"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/resume/">简历</a>
+</li>
+<li class="mr-3 mr-lg-0 float-left float-lg-none sidebar__menu-item"> <i class="mr-1 fas fa-rss"></i> <a class="sidebar__menu-item__link" href="https://flyingeye.cn/feed.xml" target="_blank">Feed</a>
+</li>
+</ul></div></div>
+<div class="sidebar__socials"><div class="row justify-content-center"><ul class="p-0 list-none sidebar__socials-list">
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title"></h4></div>
+<div class="mt-0 mb-0 mt-lh-1 mb-lg-1 d-block row"><h4 class="font-weight-bold text-center sidebar__socials-title">联系我!</h4></div>
+<li id="github" class="sidebar__socials-item"> <a class="mr-3 sidebar__socials-link" title="GitHub" href="https://github.com" target="_blank"><i class="fab fa-github sidebar__socials-icon" aria-hidden="true"></i></a>
+</li>
+</ul></div></div>
+</div></div>
+<div class="pt-4 pt-lg-0 col-lg-9 border-l-dashed border-r-dashed layout_default__content"><div class="p-lg-4 mt-4 mt-lg-0 layout_post" itemscope itemtype="http://schema.org/BlogPosting"><div class="container-fluid">
+<div class="row"><h1 class="font-weight-bold layout_post__title">问Unity专家：什么是ECS?</h1></div>
+<div class="mb-2 mt-2 mb-lg-4 mt-lg-4 layout_post__date"><div class="row"><div class=" col-12 col-lg-12 offset-lg-0 col-sm-12 "><div class="row justify-content-start"> <time class="layout_post__time"> <i class="far fa-calendar-alt"></i> 九月 29, 2019 </time>
+</div></div></div></div>
+<div class="layout_post__tags"><div class="row"> <i class="fa fa-tags"></i> Tags:  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//Unity">Unity</a>,  <a class="layout-post__tags-link" href="https://flyingeye.cn/blog/tags//ECS">ECS</a>, </div></div>
+<div class="layout-post__reading_time"><div class="row"> 阅读“关于 1 分钟</div></div>
+<div class="layout_post__content"><div class="row d-block">
+<ul id="markdown-toc"><li><a href="#gist-code" id="markdown-toc-gist-code">Gist code</a></li></ul>
+<p>Hi! <img class="emoji" title=":hand:" alt=":hand:" src="https://github.githubassets.com/images/icons/emoji/unicode/270b.png" height="20" width="20"></p>
+<p>文章来源：<a href="https://medium.com/improbable-engineering/ask-the-unity-expert-what-is-the-ecs-37616ae375ef" target="_blank">Ask the Unity expert: what is the ECS?</a></p>
+<p>在这里，这是关于这个主题一系列文章的第一篇，我们将解释Unity的ECS是什么以及它能为你的游戏做些什么。</p>
+<p>Unity的ESC的主要好处是默认性能。为了实现这一点，ECS从传统的面向对象编程(即大多数unity开发者所熟悉的以GameObject和MonoBehaviour为中心的工作流)转向面向数据编程。为了说明他们的不同，让我们比较一下你如何用每种方法构建一个代表玩家角色的对象:</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-ECS_1.png" title="Unity-ECS_1.png" alt="Unity-ECS_1.png">
+</div>
+<p>使用面向对象编程，你要创建GameObject来代表玩家角色，然后添加MonoBehaviours来赋予GameObject功能，例如玩家控制器、健康状况和物理属性。这些MonoBehaviours包含数据（例如生命值）和修改数据的代码（例如当玩家受到伤害时生命值减少）</p>
+<div class="row imager" style="margin: 40px 0px;"> <img class="img-fluid mx-auto d-block" src="/assets/images/posts/Unity-ECS_2.png" title="Unity-ECS_2.png" alt="Unity-ECS_2.png">
+</div>
+<p>使用面向数据的设计，你要创建一个实体来代表玩家角色，然后附加组件来存储数据。ECS组件不应该与GameObject组件混淆，比如MonoBehaviours。不像GameObject组件，ECS组件不会包含任何的逻辑，它们只是存储数据。我们用来在实体和它们的组件上执行操作的代码以sysytems的形式存在。Systems即脚本。它们大多数操作世界上所有的实体和组件。</p>
+<p>为了继续前面生命值递减的例子，一个system对所有的具有健康和伤害组件的实体进行分组并对相应的受影响的组件递减生命值。</p>
+<p>##ECS的好处是什么？ 面向数据设置的内存布局确保由ECS生成的diamante再内存地址之间执行的跳转比传统的面向对象编程要少的多。</p>
+<p>此外，ECS的内存布局允许利用缓存预取进行进一步的代码优化。你的CPU使用的这个进程确保在需要的时候它已经把下一比特的数据加载到缓存中了。Unity ECS通过使用同样大小的组件块来实现这一点。这些组件块是可以线性迭代的。CPU不需要处理各种大小的随机存储的对象，只需要处理这些线性存储在相同内存区域的大小相同的块。这样使CPU的工作更容易，有点像玩1*1的俄罗斯方块。 通过解耦数据（实体和组件）和逻辑（系统）,ECS还生成了更加模块化、更易于阅读的代码。作为一名致力于不太可能的面向Unity的SpatialOS Game Development Kit (GDK， 它建立在Unity的ECS上）的开发者，我对这一点尤其感兴趣。ECS概念上反映了SpatialOs（实体、组件和操作他们的工作人员），因此非常适合SoatialOS GDK。</p>
+<p>为什么不是每个人都使用ECS？ 有了这么多好处，你可能有疑问？为什么不是每个人都使用ECS?首先，ECS并不适合所有人。在不太可能的情况下，我们对此感到兴奋，因为它支持Spatial OS 所支持的大量的、多人的且持久的游戏，但是有些游戏（比如回合制策略游戏）并不需要这种性能。 其次，ECS仍然处于开发的试验阶段。Unity先用的工具和系统仍然只设计用于FGameObjects和MonoBehaviours。</p>
+<p>##SpatialOS的ECS和MonoBehaviour工作流 为了缓解这些痛点，SpatialOS GDK for Unity提供了两个工作流选项：</p>
+<p>1、以MonoBehaviour为中心的工作流，这个工作在Unity所有的已开发的MonoVehaviour工具、工作流和APIs。</p>
+<p>2、ECS工作流，这个利用了ECS开发范式和相关的性能改进。</p>
+<p>至关重要的是，这些工作流并不相互排斥。鉴于目前缺乏围绕ECS的工具，我们预计你将使用MonoBehaviours来编写大部分或者全部的游戏。无论你选择哪个工作流，你的游戏都将能利用我们使用使用ECS编写的GDK核心模块。我们的目标是通过我们的自己的API和抽象层尽早的给你带来ECS的好处。这种方法使你免受Unity对他们的ECS所做的大部分破坏性改变，所以你可以专注于编写你想要的游戏。 在下一篇文章中我们将详细研究这两种工作流，并检查每种工作流的代码示例。在那之前，这里有更多的关于Unity ECS和SpatialOS GDK for Unity的资源。</p>
+<p>###ECS资源列表</p>
+<p>Unity’s ECS samples repository</p>
+<p>Video playlist: Intro To The Entity Component System</p>
+<p>Voxelman, an ECS tech demo by Keijiro Takahashi</p>
+<p>SpatialOS GDK for Unity Github</p>
+<h2 id="gist-code">Gist code</h2>
+<script src="https://gist.github.com/a3672f19f0f2ac35810b.js"> </script><p><br></p>
+<p>To use, see:<a href="https://jektify.github.io" target="_blank">Jektify - Doc</a></p>
+<dl class="jektify jektify--dark jektify--custom">
+<dt class="jektify__header jektify__header--dark jektify__header--custom"> <a class="jektify__brand jektify__brand--dark jektify__brand--custom" href="https://jektify.github.io" target="_blank">jektify</a> <i class="jektify__year jektify__year--dark jektify__year--custom">© 2019 </i> <span class="jektify__button jektify__button--dark jektify__button--custom jektify__button--open">+</span>
+</dt>
+<dd class="jektify__body jektify__body--dark jektify__body--custom" style="display: block">
+<h1 class="jektify__title jektify__title--dark jektify__user--dark jektify__title--custom" style="display: none;">Música</h1>
+<p class="jektify__description jektify__description--dark jektify__description--custom" style="display: none;">Jekyll plugin to generate html snippets for embedding Spotify Musics. To listen to the full song, open your Spotify and start these musics.</p>
+<div class="jektify__tracklist jektify__tracklist--dark jektify__tracklist--custom"> <iframe id="jektify__track" class="jektify__track jektify__track--dark jektify__track--custom" src="https://embed.spotify.com/?uri=spotify:track:62qsgMnY4wg8nE5qjyOdWO&amp;theme=dark" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+</div>
+</dd>
+</dl>
+<p>Goodbye! <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+<hr style="border-top: 1px solid #9D9D9D ; color: #9D9D9D ;" class="endpost">
+</div></div>
+<div class="layout_post__dayquote">
+<div class="row"><h2 class="layout_post__dayquote-title">The word of the day!</h2></div>
+<div class="row"><p class="layout_post__dayquote-description">Put a very powerful message.</p></div>
+</div>
+<div class="layout_post__share">
+<div class="row justify-content-center"><h2>分享</h2></div>
+<div class="row justify-content-center">
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-fb" href="#" title="" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Facebook</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-ln" href="http://www.linkedin.com/cws/share?url=https://flyingeye.cn/blog/%E4%BB%80%E4%B9%88%E6%98%AFECS/" onclick='window.open(this.href,"popupwindow","status=0,height=500,width=700,resizable=0,top=50,left=100");return false;' target="_blank" title="">Linkedin</a>
+</div>
+<div class="text-center col-12 col-sm-3 col-md-3 col-lg-2"> <a class="btn btn-link btn-typing layout_post__share-tw" href="https://twitter.com/intent/tweet?text=https://flyingeye.cn/blog/%E4%BB%80%E4%B9%88%E6%98%AFECS/%20-%20%E9%97%AEUnity%E4%B8%93%E5%AE%B6%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AFECS?%20by%20" target="_blank" title="">Twitter</a>
+</div>
+<div class="offset-0 offset-sm-0 offset-md-0 offset-lg-2"></div>
+</div>
+</div>
+<div class="layout_post__author"><div class="row"><div class="col-12 p-0 col-lg-12 ">
+<p class="layout_post__author-title">作者</p>
+<h2 class="font-weight-bold layout_post__author-name">xiaofeng</h2>
+<p class="layout_post__author-description">Hi! I'm the xiaofeng. :)</p>
+</div></div></div>
+</div></div></div>
+</div></div>
+<div class="footer">
+<div class="container-fluid"><div class="row">
+<div class="col-12 col-md-4"> <span class="text-center footer__copyright">编程人生 © 2015-2019 • All right reserved.</span>
+</div>
+<div class="col-12 col-md-4 d-none d-md-block"> <span class="text-center footer__message">Simplicity is fashionable.</span>
+</div>
+<div class="col-12 col-md-4"> <span class="text-center footer__madeby">Made with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> using <a href="https://github.com/williamcanin/typing-jekyll-template" target="_blank">Typing</a> Theme.</span>
+</div>
+</div></div>
+<a class="footer__scrrolltop" href="#top"><i class="fas fa-caret-up"></i></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script type="text/javascript" src="https://flyingeye.cn/assets/js/post.js"></script> <script src="https://flyingeye.cn/assets/vendor/jektify/js/jektify.min.js"></script>
+</div></body></html>
